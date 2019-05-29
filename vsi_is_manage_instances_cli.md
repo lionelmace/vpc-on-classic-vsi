@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-05-29"
 
 subcollection: vpc-on-classic-vsi
 
@@ -12,6 +12,7 @@ subcollection: vpc-on-classic-vsi
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:tip: .tip}
+{:important: .important}
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
@@ -31,6 +32,10 @@ You can view and manage your {{site.data.keyword.vsi_is_full}} instances by usin
     * The infrastructure-service plugin
 
    For more information, see [IBM Cloud CLI for VPC Reference](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference).
+   
+   When you install the vpc-infrastructure plugin for the first time, you must set the target generation to gen 1, `ibmcloud is target --gen 1`.
+   {:important}
+   
 2. Make sure you have already [created an {{site.data.keyword.vpc_short}}](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started).
 
 ## Viewing instance actions
