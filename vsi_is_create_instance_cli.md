@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-05-21"
+lastupdated: "2019-05-29"
 
 keywords: virtual server instances, command line interface, creating virtual server instances
 
@@ -17,6 +17,7 @@ subcollection: vpc-on-classic-vsi
 {:pre: .pre}
 {:tip: .tip}
 {:note: .note}
+{:important: .important}
 {:table: .aria-labeledby="caption"}
 
 # Creating virtual server instances (CLI)
@@ -33,6 +34,10 @@ You can create {{site.data.keyword.vsi_is_full}} instances by using the command 
     * The infrastructure-service plugin
 
    For more information, see [IBM Cloud CLI for VPC Reference](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference).
+   
+   When you install the vpc-infrastructure plugin for the first time, you must set the target generation to gen 1, `ibmcloud is target --gen 1`.
+   {:important}
+   
 2. Make sure you have already [created an {{site.data.keyword.vpc_short}}](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started).
 
 ## Gathering information to create an instance using the CLI
