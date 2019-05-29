@@ -30,7 +30,7 @@ You can create as many virtual servers as you need, configure network and securi
 Before you begin, make sure you have [created an IBM Cloud VPC](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started).
 {:important}
 
-{{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the  {{site.data.keyword.cloud_notm}} {{site.data.keyword.BluVirtServers_short}} offerings on the classic infrastructure, see [IBM Cloud Virtual Servers](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers#getting-started-with-virtual-servers).
+{{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the  {{site.data.keyword.cloud_notm}} {{site.data.keyword.BluVirtServers_short}} offerings on the classic infrastructure, see [IBM Cloud Virtual Servers](/docs/vsi?topic=virtual-servers-getting-started-tutorial).
 {:note}
 
 <p>Use the following information to start creating and connecting to your instances quickly.
