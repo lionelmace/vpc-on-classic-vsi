@@ -22,6 +22,7 @@ subcollection: vpc-on-classic-vsi
 
 # Creating virtual server instances
 {: #creating-virtual-servers}
+[comment]: # (linked help topic)
 
 You can create {{site.data.keyword.vsi_is_full}} from the *Virtual server instances* page in {{site.data.keyword.cloud_notm}} console.
 {:shortdesc}
