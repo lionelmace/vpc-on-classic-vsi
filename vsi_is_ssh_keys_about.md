@@ -19,6 +19,7 @@ subcollection: vpc-on-classic-vsi
 
 # SSH keys
 {: #ssh-keys}
+[comment]: # (linked help topic)
 
 When you provision {{site.data.keyword.vsi_is_full}}, you must select an existing SSH key or upload a new SSH key to use before you can create the instance. SSH keys are used by servers to identify a user or instance through public-key cryptography. SSH keys are made up of an alpha-numeric combination and are unique to the instance to which they are assigned. You can add, edit, or delete SSH keys by using the {{site.data.keyword.cloud_notm}} console.
 {:shortdesc}
