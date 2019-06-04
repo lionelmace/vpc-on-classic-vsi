@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-05-29"
+lastupdated: "2019-05-30"
 
 keywords: virtual server instances, command line interface, creating virtual server instances
 
@@ -31,12 +31,13 @@ You can create {{site.data.keyword.vsi_is_full}} instances by using the command 
 
 1. Ensure you have downloaded, installed, and initialized the following CLI plug-ins:
     * {{site.data.keyword.cloud_notm}} CLI
-    * The infrastructure-service plugin
+    * The vpc-infrastructure plugin
 
    For more information, see [IBM Cloud CLI for VPC Reference](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference).
    
    When you install the vpc-infrastructure plugin for the first time, you must set the target generation to gen 1, `ibmcloud is target --gen 1`.
    {:important}
+   
    
 2. Make sure you have already [created an {{site.data.keyword.vpc_short}}](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started).
 
@@ -170,7 +171,7 @@ Use the following commands to determine the required information for creating a 
 ## Creating an instance using the CLI
 {: #creating-an-instance-using-the-cli}
 
-After you know these values, use them to run the `instance-create` command. In addition to the information that you gathered, you must specify a name for the instance, and a port speed in MB per second. The following example shows the command in action (using generic x and 123 values for example purposes only).  
+After you know these values, use them to run the `instance-create` command. In addition to the information that you gathered, you must specify a name for the instance. The following example shows the command in action (using generic x and 123 values for example purposes only).  
 
 When you provision an instance, a 100 GB block storage volume is automatically created as a primary boot volume and attached to the instance. The following example shows how to include a secondary volume with the `--volume-attach` parameter. Including a secondary volume is optional.
 {:note}
@@ -183,14 +184,13 @@ When you provision an instance, a 100 GB block storage volume is automatically c
        <ZONE_NAME> \
        <PROFILE_ID> \
        <SUBNET_ID> \
-       <PORT_SPEED> \
        --image <IMAGE_ID> \
        --keys <KEY_IDS>
        --volume-attach <VOLUME_ATTACH_JSON or JSON file>
    ```
    {:codeblock}
 
-   For example, if you are creating an instance called _my-instance_ in _us-south-2_ and using the _bc1-2x4_ profile with a port speed of _100_, your `instance-create` command would look similar to the following sample:
+   For example, if you are creating an instance called _my-instance_ in _us-south-2_ and using the _bc1-2x4_ profile, your `instance-create` command would look similar to the following sample:
 
    ```
    $ ibmcloud is instance-create \
@@ -199,7 +199,6 @@ When you provision an instance, a 100 GB block storage volume is automatically c
        us-south-2 \
        bc1-2x4 \
        1234x12x-345x-1x23-45x6-x7x891011x1x \
-       100 \
        --image 1xx2x34x-5678-12x3-x4xx-567x81234567 \
        --keys 1234xxxx-x12x-xxxx-34xx-xx1234xxxxxx
        --volume-attach @/Users/myname/myvolume-attachment_create.json
@@ -212,7 +211,6 @@ When you provision an instance, a 100 GB block storage volume is automatically c
    - `ZONE_NAME` is  _us-south-2_
    - `PROFILE_ID` is _bc1-2x4_
    - `SUBNET_ID` is _SUBNET_ID_
-   - `PORT_SPEED` is _100_
    - `IMAGE_ID` is _IMAGE_ID_
    - `KEY_IDS` is _KEY_ID1, KEY_ID2, ..._
    - `VOLUME_ATTACH_JSON` is the volume attachment specification in JSON format, provided in the command or as a file. For an example of a volume attachment JSON for a data volume, see [Example secondary volume JSON file](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-storage#secondary-volume-byok-json).
@@ -330,5 +328,7 @@ Do you prefer to create an instance using the {{site.data.keyword.cloud_notm}} c
 <!-- A series of emails are sent to your administrator: acknowledgment of the virtual server instance order, order approval and processing, and a message stating the instance is created. -->
 
 After the server is created, you can connect to your instance. For more information, see [Connecting to your Linux instance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-connecting-to-your-linux-instance#connecting-to-your-linux-instance) or [Connecting to your Windows instance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-connecting-to-your-windows-instance#connecting-to-your-windows-instance).
+
+
 
 
