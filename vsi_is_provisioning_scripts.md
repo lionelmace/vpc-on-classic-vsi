@@ -17,6 +17,7 @@ subcollection: vpc-on-classic-vsi
 
 # User data
 {: #user-data}
+[comment]: # (linked help topic)
 
 When you create an {{site.data.keyword.vsi_is_full}} instance, you can add user data that automatically performs common configuration tasks or runs scripts. In the **User Data** field on the order form, you can enter optional cloud-init user data for the server.
 {:shortdesc}
