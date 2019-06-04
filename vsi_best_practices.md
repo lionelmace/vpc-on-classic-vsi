@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2018-12-12"
+lastupdated: "2019-06-04"
 
 keywords: IBM Cloud Virtual Private Cloud, popular profile options, necessary resources
 
@@ -21,6 +21,8 @@ subcollection: vpc-on-classic-vsi
 
 # Planning for instances
 {: #planning-for-instances}
+[comment]: # (linked help topic)
+
 
 When you're planning to provision {{site.data.keyword.vsi_is_full}}, you might find this configuration checklist helpful to get the most out of your virtual server deployment.
 {:shortdesc}
@@ -41,8 +43,7 @@ After you have an {{site.data.keyword.vpc_short}} available, consider the follow
 |__ 4. Determine what instance location to select.|
 |__ 5. Consider the popular [profile options](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#profiles) of vCPU and RAM combinations for your workload. Profiles contain preconfigured instances that are ready to use in a matter of minutes. It's important to ensure your instances will have the necessary resources to keep your workloads and your environment up and running.|
 |__ 6. Determine what operating system image you'll select for your instance. You can choose among the current stock [images](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-images#images). |
-|__ 7. Decide what port speeds you need. Port speeds are allocated to the virtual server instance and not a specific network interface. The default port speed is 100 Mbps. This option can't be modified after you create the instance. Use the speed that best balances cost versus performance for your design.|
-|__ 8. Make sure you have a unique name for the instance. If you have a method to naming virtual server instances, it's much easier to filter and search on them later. |
+|__ 7. Make sure you have a unique name for the instance. If you have a method to naming virtual server instances, it's much easier to filter and search on them later. |
 
 ## Next steps
 {: #next-create-instance}
