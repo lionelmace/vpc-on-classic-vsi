@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-04-02"
+lastupdated: "2019-06-03"
 
 subcollection: vpc-on-classic-vsi
 
@@ -37,5 +37,8 @@ You must have your SSH key available. To locate your SSH key or generate an SSH 
  * Locate an SSH key: Look for a file called `id_rsa.pub` under an `.ssh` directory under your home directory, for example, `/Users/<USERNAME>/.ssh/id_rsa.pub`. The file starts with `ssh-rsa` and ends with your email address.
 
 * Generate an SSH key: If you do not have a public SSH key or if you forgot the password of an existing one, generate a new one by running the `ssh-keygen` command and following the prompts. For example, you can generate an SSH key on your Linux server by running the command `ssh-keygen -t rsa -C "user_ID"`. That command generates two files. The generated public key is in the `<your key>.pub` file.
+
+  If you are using OpenSSH version 7.8 or higher and plan to use the SSH key to access a Windows instance, you must use the following command to generate the key in PEM format. `$ssh-keygen -m PEM -t rsa -f "user_ID"`
+  {:important}
 
 For more information about creating, editing, or deleting SSH keys, see [Managing SSH keys](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-managing-ssh-keys#managing-ssh-keys).
