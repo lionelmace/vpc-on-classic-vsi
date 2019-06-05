@@ -13,6 +13,7 @@ subcollection: vpc-on-classic-vsi
 {:screen: .screen}
 {:new_window: target="_blank"}
 {:note: .note}
+{:important: .important}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
