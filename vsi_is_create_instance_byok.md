@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-05-28"
+lastupdated: "2019-06-05"
 
 subcollection: vpc-on-classic-vsi
 
@@ -79,7 +79,7 @@ To use the CLI to create a virtual server instance with volumes that use custome
     
     1. If you don't already have the {{site.data.keyword.keymanagementserviceshort}} CLI plugin installed, install it by running the following command: 
        ```
-       ibmcloud plugin update key-protect -r 'IBM Cloud'
+       ibmcloud plugin install key-protect -r 'IBM Cloud'
        ```
        {: pre}
     
