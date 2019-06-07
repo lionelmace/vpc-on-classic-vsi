@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-04-04"
+lastupdated: "2019-06-07"
 
 subcollection: vpc-on-classic-vsi
 
@@ -24,13 +24,15 @@ subcollection: vpc-on-classic-vsi
 
 To access {{site.data.keyword.vsi_is_full}} instances, you must have an SSH key available to use. You can manage SSH keys in {{site.data.keyword.cloud_notm}} console and by using the CLI. 
 
+Managing keys by using the {{site.data.keyword.cloud_notm}} console or CLI has no effect on keys in instances that are already created. (For an existing Linux instance, you can edit keys directly in the `~/.ssh/` directory of the instance.)
+
 For more information about locating or generating an SSH key, see [SSH keys](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-ssh-keys#ssh-keys).
 {: tip}
 
 ## Managing SSH keys with IBM Cloud console
 {: #managing-ssh-keys-with-ibm-cloud-console}
 
-When you provision a virtual server, you can select from available SSH keys or upload a new one. You cannot generate SSH keys in the console.
+When you provision a virtual server, you can select from available SSH keys or upload a new one. You cannot generate SSH keys in {{site.data.keyword.cloud_notm}} console.
 {:shortdesc}
 
 You can manage and delete SSH keys by using the {{site.data.keyword.cloud_notm}} console.
