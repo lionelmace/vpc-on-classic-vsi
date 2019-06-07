@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-04-04"
+lastupdated: "2019-06-07"
 
 keywords: virtual server instances, virtual private cloud, boot volume, location select
 
@@ -80,7 +80,7 @@ To create an instance, select the following instance details.
     </tr>
     <td>SSH Key</td>
     <td>
-    <p>You must select an existing SSH key or upload a new SSH key to use before you can create the instance. SSH keys are used to securely connect to the instance after it's running.</p>
+    <p>You must select an existing SSH key or upload a new SSH key to use before you can create the instance. SSH keys are used to securely connect to the instance after it's running. You can add SSH keys to your instance only when you initially create the instance.</p>
     <p>Note: Alpha-numeric combinations are limited to 100 characters.</p>
     <p>For more information, see [SSH keys](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-ssh-keys#ssh-keys).</p></td>
     </tr>
