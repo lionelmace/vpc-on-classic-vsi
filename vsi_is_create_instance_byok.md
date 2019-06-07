@@ -73,7 +73,7 @@ When you provision a virtual server instance, you can specify customer-managed e
 ## Using the CLI to provision instances and volumes with customer managed encryption
 {: #provision-byok-cli}
 
-To use the CLI to create a virtual server instance with volumes that use customer managed encryption, you can use the ```ibmcloud is instance-create``` command and reference a JSON to attach volumes that use customer-managed encryption. 
+To use the CLI to create a virtual server instance with volumes that use customer managed encryption, you can use the `ibmcloud is instance-create` command and reference a JSON to attach volumes that use customer-managed encryption. 
 
 1. Obtain the CRN of the root key in your desired key management service instance. The following example is specific to {{site.data.keyword.keymanagementserviceshort}}. 
     
@@ -117,7 +117,7 @@ To use the CLI to create a virtual server instance with volumes that use custome
        ```
        {:screen}
        
-       where the instance ID is the string following the final ```::``` in the CRN, ```7mnxxxo8-91xx-23px-q4rs-xxtuv5w6xxx7```. 
+       where the instance ID is the string following the final `::` in the CRN, `7mnxxxo8-91xx-23px-q4rs-xxtuv5w6xxx7`. 
     
     4. List the available keys and their associated CRNs within your desired {{site.data.keyword.keymanagementserviceshort}} service instance by running the following command:
        ```
@@ -146,7 +146,7 @@ To use the CLI to create a virtual server instance with volumes that use custome
        ```
        {:screen}
        
-2. Use the [ibmcloud is instance-create](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference#instance-create) command and attach the necessary JSON files that specify customer managed encryption for the boot volume and any secondary data volumes that you want to include. The ```encryption_key``` parameter must include a valid CRN for the root key in the Key Protect service. See the following [JSON file examples](#vsi-vol-attachment-json) of a boot volume JSON and secondary volume JSON. (For more information about creating instances, see [Creating virtual server instances (CLI)](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-creating-virtual-servers-cli).)
+2. Use the [ibmcloud is instance-create](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference#instance-create) command and attach the necessary JSON files that specify customer managed encryption for the boot volume and any secondary data volumes that you want to include. The `encryption_key` parameter must include a valid CRN for the root key in the Key Protect service. See the following [JSON file examples](#vsi-vol-attachment-json) of a boot volume JSON and secondary volume JSON. (For more information about creating instances, see [Creating virtual server instances (CLI)](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-creating-virtual-servers-cli).)
 
 ## Creating a volume attachment in JSON format
 {: #vsi-vol-attachment-json}
@@ -201,4 +201,3 @@ The following example defines a general-purpose secondary (data) volume and spec
 ]
 ```
 {:codeblock}
-
