@@ -166,7 +166,7 @@ Use the following commands to determine the required information for creating a 
    ```
    {:screen}
 
-   If you do not have one available, you can create an SSH key using the `ibmcloud is key-create` command. For more information about managing SSH keys, see [Managing SSH keys](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-managing-ssh-keys#managing-ssh-keys).
+   If you do not have one available, you can create an SSH key using the `ibmcloud is key-create` command. You can add SSH keys to your instance only when you initially create the instance. For more information about managing SSH keys, see [Managing SSH keys](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-managing-ssh-keys#managing-ssh-keys).
 
 ## Creating an instance using the CLI
 {: #creating-an-instance-using-the-cli}
