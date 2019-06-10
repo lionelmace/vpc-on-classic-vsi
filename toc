@@ -1,11 +1,13 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
+{:external: target="_blank" .external}
 
 {: .toc subcollection="vpc-on-classic-vsi" audience="compute" arm="407" href="/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-getting-started" path="vpc-on-classic-vsi"}
 IBM Cloud Virtual Servers for Virtual Private Cloud
 
     {: .navgroup id="learn"}
     getting-started.md
+    [Learn about IBM Cloud Virtual Private Cloud](https://www.ibm.com/cloud/vpc){: external}
     vsi_is_about_vpc.md
     vsi_best_practices.md
     vsi_is_images.md
