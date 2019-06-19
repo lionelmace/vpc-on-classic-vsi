@@ -20,7 +20,7 @@ subcollection: vpc-on-classic-vsi
 # Images
 {: #images}
 
-When you provision {{site.data.keyword.vsi_is_full}}, you can select from the supported stock images or a custom image that you've imported from {{site.data.keyword.cos_full_notm}}. The image that you select determines the operating system that is provisioned for your instance. 
+When you provision {{site.data.keyword.vsi_is_full}}, you can select from the supported stock images. The image that you select determines the operating system that is provisioned for your instance. 
 {:shortdesc}
 
 ## Stock images
