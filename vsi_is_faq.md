@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-05-29"
+lastupdated: "2019-06-24"
 
 subcollection: vpc-on-classic-vsi
 
@@ -27,7 +27,7 @@ An account has a limit of 100 instances that can run on public virtual servers, 
 ## What regions are available?
 {: faq}
 
-You can create virtual server intances for {{site.data.keyword.vpc_full}} in Dallas (us-south), Frankfurt (eu-de), and Tokyo (jp-tok).
+You can create virtual server intances for {{site.data.keyword.vpc_full}} in Dallas (us-south), Frankfurt (eu-de), Tokyo (jp-tok), London (eu-gb), and Sydney (au-syd).
 
 ## Can I use existing virtual server instances from my classic infrastructure with an {{site.data.keyword.vpc_short}}?
 {: faq}
