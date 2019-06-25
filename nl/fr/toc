@@ -1,0 +1,55 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+{:external: target="_blank" .external}
+
+{: .toc subcollection="vpc-on-classic-vsi" category="vpc,compute" audience="compute" arm="407" href="/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-getting-started" path="vpc-on-classic-vsi"}
+IBM Cloud Virtual Servers for Virtual Private Cloud
+
+    {: .navgroup id="learn"}
+    getting-started.md
+    [En savoir plus sur IBM Cloud Virtual Private Cloud](https://www.ibm.com/cloud/vpc){: external}
+    vsi_is_about_vpc.md
+    vsi_best_practices.md
+    vsi_is_images.md
+    vsi_is_profiles.md
+    vsi_is_ssh_keys_about.md
+    vsi_is_provisioning_scripts.md
+    vsi_is_network_security_options.md
+    vsi_is_storage.md
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    {: .topicgroup}
+    Création
+        vsi_is_create_instance.md
+        vsi_is_create_instance_cli.md
+        vsi_is_create_instance_byok.md
+
+    {: .topicgroup}
+    Connexion
+        vsi_is_connecting_linux_gc.md
+        vsi_is_connecting_windows_gc.md
+
+    {: .topicgroup}
+    Gestion
+        vsi_is_manage_instances.md
+        vsi_is_manage_instances_cli.md
+        vsi_is_ssh_keys.md
+    
+    {: .topicgroup}
+    Liens connexes
+        [Initiation à IBM Cloud Virtual Private Cloud](/vpc-on-classic/vpc-on-classic-getting-started)
+        [Création d'un VPC IBM Cloud à l'aide de la console IBM Cloud](/vpc-on-classic/vpc-on-classic-creating-a-vpc-using-the-ibm-cloud-console)
+        /tutorials/solution-tutorials-vpc-public-app-private-backend
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    [Référence API pour VPC](https://console.cloud.ibm.com/apidocs/vpc-on-classic)
+    [Référence de l'interface CLI Compute pour VPC](/vpc-infrastructure-cli-plugin/vpc-infrastructure-cli-plugin-vpc-reference#compute)
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    vsi_is_faq.md
+    vsi_is_troubleshooting.md
+    [Aide et assistance](/vpc-on-classic/vpc-on-classic-getting-help-and-support)
+    {: .navgroup-end}
