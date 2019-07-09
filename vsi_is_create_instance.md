@@ -72,12 +72,6 @@ To create an instance, select the following instance details.
     <p>For more information, see [Profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#profiles).</p>
     </td>
     </tr>
-    <tr>
-    <td>Image</td>
-    <td><p>All images use cloud-init, which allows you to enter user metadata associated with the instance for post provisioning scripts.</p>
-    <p>For more information, see [Images](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-images#images).</p>
-    </td>
-    </tr>
     <td>SSH Key</td>
     <td>
     <p>You must select an existing SSH key or upload a new SSH key to use before you can create the instance. SSH keys are used to securely connect to the instance after it's running. You can add SSH keys to your instance only when you initially create the instance.</p>
@@ -93,6 +87,12 @@ To create an instance, select the following instance details.
     <tr>
     <td>Boot volume</td>
     <td><p>The default boot volume size for all profiles is 100 GB. By default the boot volume includes provider managed encryption. If you want to use customer managed encryption, you can edit the details of the boot volume. For more information, see [Storage](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-storage#storage).</p>
+    </td>
+    </tr>
+    <tr>
+    <td>Image</td>
+    <td><p>All images use cloud-init, which allows you to enter user metadata associated with the instance for post provisioning scripts.</p>
+    <p>For more information, see [Images](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-images#images).</p>
     </td>
     </tr>
     <tr>
