@@ -1,0 +1,55 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+{:external: target="_blank" .external}
+
+{: .toc subcollection="vpc-on-classic-vsi" category="vpc,compute" audience="compute" arm="407" href="/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-getting-started" path="vpc-on-classic-vsi"}
+IBM Cloud Virtual Servers for Virtual Private Cloud
+
+    {: .navgroup id="learn"}
+    getting-started.md
+    [了解有关 IBM Cloud Virtual Private Cloud 的信息](https://www.ibm.com/cloud/vpc){: external}
+    vsi_is_about_vpc.md
+    vsi_best_practices.md
+    vsi_is_images.md
+    vsi_is_profiles.md
+    vsi_is_ssh_keys_about.md
+    vsi_is_provisioning_scripts.md
+    vsi_is_network_security_options.md
+    vsi_is_storage.md
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    {: .topicgroup}
+    创建
+        vsi_is_create_instance.md
+        vsi_is_create_instance_cli.md
+        vsi_is_create_instance_byok.md
+
+    {: .topicgroup}
+    连接
+        vsi_is_connecting_linux_gc.md
+        vsi_is_connecting_windows_gc.md
+
+    {: .topicgroup}
+    管理
+        vsi_is_manage_instances.md
+        vsi_is_manage_instances_cli.md
+        vsi_is_ssh_keys.md
+    
+    {: .topicgroup}
+    相关链接
+        [IBM Cloud Virtual Private Cloud 入门](/vpc-on-classic/vpc-on-classic-getting-started)
+        [使用 IBM Cloud 控制台创建 IBM Cloud VPC](/vpc-on-classic/vpc-on-classic-creating-a-vpc-using-the-ibm-cloud-console)
+        /tutorials/solution-tutorials-vpc-public-app-private-backend
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    [VPC 的 API 参考](https://console.cloud.ibm.com/apidocs/vpc-on-classic)
+    [VPC 的计算 CLI 参考](/vpc-infrastructure-cli-plugin/vpc-infrastructure-cli-plugin-vpc-reference#compute)
+    {: .navgroup-end}
+
+    {: .navgroup id="help"}
+    vsi_is_faq.md
+    vsi_is_troubleshooting.md
+    [获取帮助与支持](/vpc-on-classic/vpc-on-classic-getting-help-and-support)
+    {: .navgroup-end}
