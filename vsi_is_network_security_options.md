@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-01-16"
+lastupdated: "2019-07-23"
 
 subcollection: vpc-on-classic-vsi
 
@@ -25,7 +25,7 @@ When implementing {{site.data.keyword.vsi_is_full}}, you have access to the late
 ## Using instance vNICs
 {: #using-instance-vnics}
 
-A virtual network interface card (vNIC) is used to connect a virtual server to a network. When you create a VSI instance, you can use a vNIC to assign multiple IP addresses. The following list highlights how vNICs work with your instance.
+A virtual network interface card (vNIC) is used to connect a virtual server to a network. When you create a virtual server instance, you can use a vNIC to assign multiple IP addresses. The following list highlights how vNICs work with your instance.
 
 * You can create and assign up to 5 vNICs to each instance. Each vNIC will be assigned a private IP from the connected subnet and you can optionally attach a floating IP and security groups.
 * You can attach each vNIC to a subnet in the same zone.
@@ -34,7 +34,7 @@ A virtual network interface card (vNIC) is used to connect a virtual server to a
 * You can assign security groups to each vNIC.
 * You can change the name of any existing vNIC.
 
-Bandwidth is associated with the instance itself, and is not a configurable aspect of an individual vNIC. The default bandwidth for an instance is 100 Mbps, with an option to upgrade to 1 Gbps.
+The profile that's selected when an instance is created determines the network performance cap for the instance, from 1 Gbps to 16 Gbps. Bandwidth is distributed across the vNICs that are attached to the virtual server instance. 
 
 ## Networking options
 {: #networking-options}
