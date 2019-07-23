@@ -160,6 +160,6 @@ $ ibmcloud is instance-profiles
 
 When using the command line, the following information describes what the output represents. The profile sizes have different ratios of CPU to memory, designed for different workloads:
 
-*  "b" is balanced, which is a 1:2 or 1:4 ratio
-*  "c" is compute (higher on the CPUs) , which is a 1:1 ratio
+*  "b" is balanced, which is a 1:4 ratio
+*  "c" is compute (higher on the CPUs) , which is a 1:2 ratio
 *  “m” is memory (higher on the memory), which is a 1:8 ratio
