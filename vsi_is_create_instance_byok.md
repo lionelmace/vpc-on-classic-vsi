@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-06-05"
+lastupdated: "2019-07-23"
 
 subcollection: vpc-on-classic-vsi
 
@@ -30,7 +30,7 @@ You can use the key management service that works best for your needs. {{site.da
 
 | Key Management Service | HSM Encryption Certification |
 | ----- | ----- |
-| [{{site.data.keyword.keymanagementserviceshort}}](/docs/services/key-protect/concepts?topic=key-protect-getting-started-tutorial#getting-started-tutorial) | FIPS 140-2 *Level 2* compliance |
+| [{{site.data.keyword.keymanagementserviceshort}}](/docs/services/key-protect/concepts?topic=key-protect-getting-started-tutorial#getting-started-tutorial) | FIPS 140-2 *Level 3* compliance |
 | [{{site.data.keyword.hscrypto}}](/docs/services/hs-crypto?topic=hs-crypto-get-started#get-started) | FIPS 140-2 *Level 4* compliance |
 {: caption="Table 1. Available key management service options" caption-side="top"}
 
