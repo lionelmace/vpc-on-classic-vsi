@@ -19,7 +19,7 @@ subcollection: vpc-on-classic-vsi
 {:important: .important}
 {:note: .note}
 
-# Getting started tutorial
+# Getting started with IBM Cloud Virtual Servers for VPC
 {: #getting-started}
 
 Use {{site.data.keyword.vsi_is_full}} (VPC) to provision scalable compute resources in the IBM Cloud.
