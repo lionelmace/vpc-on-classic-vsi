@@ -3,7 +3,7 @@
 {:external: target="_blank" .external}
 
 {: .toc subcollection="vpc-on-classic-vsi" category="vpc,compute" audience="compute" arm="407" href="/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-getting-started" path="vpc-on-classic-vsi"}
-IBM Cloud Virtual Servers for Virtual Private Cloud
+IBM Cloud Virtual Servers for VPC on Classic
 
     {: .navgroup id="learn"}
     getting-started.md
