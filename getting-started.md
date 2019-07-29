@@ -22,7 +22,7 @@ subcollection: vpc-on-classic-vsi
 # Getting started with IBM Cloud Virtual Servers for VPC
 {: #getting-started}
 
-Use {{site.data.keyword.vsi_is_full}} (VPC) to provision scalable compute resources in the IBM Cloud.
+Use {{site.data.keyword.vsi_is_full}} (VPC) on Classic infrastructure to provision scalable compute resources in the IBM Cloud.
 {:shortdesc}
 
 You can create as many virtual servers as you need, configure network and security, and manage storage. All of this is available in an improved IBM Cloud console. The console is built to provide you with quick and easy access to adjust your environment with your changing workload demands. Bet you're anxious to get started, so let's get straight to business.
