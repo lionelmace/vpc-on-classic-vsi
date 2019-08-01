@@ -35,6 +35,7 @@ IBM Cloud Virtual Servers for VPC on Classic
         vsi_is_manage_instances.md
         vsi_is_manage_instances_cli.md
         vsi_is_ssh_keys.md
+        vsi_is_manage_images.md
         
     {: .topicgroup}
     Monitoring
