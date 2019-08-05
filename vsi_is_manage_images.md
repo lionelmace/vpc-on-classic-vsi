@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-01"
+lastupdated: "2019-08-05"
 
 subcollection: vpc-on-classic-vsi
 
@@ -128,7 +128,7 @@ environment by using the [Config Drive ![External link icon](../../icons/launch-
 
 When you import a custom image, it's private to the account where you import it. Also, the region where you choose to import the image is the region where you can create virtual server instances from that image.  
 
-You can import an image by using the {{site.data.keyword.cloud_notm}} console.
+When you have an image available in {{site.data.keyword.cos_full_notm}}, you can import it to {{site.data.keyword.vpc_short}} infrastructure by using the {{site.data.keyword.cloud_notm}} console.
 1. In [{{site.data.keyword.cloud_notm}} console ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.cloud.ibm.com/vpc), 
 navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > Custom Images**.
 2. Click **Import Custom Image**. 
