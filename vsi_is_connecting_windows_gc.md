@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-05-22"
+lastupdated: "2019-08-06"
 
 keywords: Windows instance, encrypt password, decrypt password, retrieve password
 
@@ -46,7 +46,7 @@ After you create your Windows instance and complete the prerequisites, complete 
 
 1. Query the status of your instance by running the following command:
   ```
-  $ ibmcloud is instance <instance id>
+  $ ibmcloud is instance <INSTANCE_ID>
   ```
   {:codeblock}
   
@@ -55,7 +55,7 @@ After you create your Windows instance and complete the prerequisites, complete 
 2. Run the following command to initialize your instance:
 
   ```
-  $ ibmcloud is instance-initialization-values <instance id>
+  $ ibmcloud is instance-initialization-values <INSTANCE_ID>
   ```
   {:codeblock}
   
@@ -80,7 +80,7 @@ After you create your Windows instance and complete the prerequisites, complete 
 4. After you decrypt your password, you can optionally associate a floating IP address to your Windows instance so you can connect to it from an internet location. Run the following command to associate a floating IP address to your instance:
 
   ```
-  ibmcloud is fipc --nic <instance nic id>
+  ibmcloud is floating-ip-reserve <FLOATING_IP_NAME> --nic-id <NIC_ID>
   ```
   {:codeblock}
 
