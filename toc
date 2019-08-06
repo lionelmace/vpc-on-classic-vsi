@@ -38,6 +38,10 @@ IBM Cloud Virtual Servers for VPC on Classic
         vsi_is_manage_images.md
         
     {: .topicgroup}
+    Migrating
+        vsi_is_migrate_from_classic_infra.md    
+        
+    {: .topicgroup}
     Monitoring
         vsi_is_monitoring.md    
     
