@@ -37,5 +37,5 @@ You can create {{site.data.keyword.block_storage_is_short}} volumes during insta
 
 For more information about {{site.data.keyword.block_storage_is_short}}, see [About {{site.data.keyword.block_storage_is_short}}](/docs/vpc-on-classic-block-storage?topic=vpc-on-classic-block-storage-block-storage-about).
 
-To start creating volumes independent of virtual server instance provisioning, see [Getting Started with {{site.data.keyword.block_storage_is_short}}](docs/vpc-on-classic-block-storage?topic=vpc-on-classic-block-storage-getting-started).
+To start creating volumes independent of virtual server instance provisioning, see [Getting Started with {{site.data.keyword.block_storage_is_short}}](/docs/vpc-on-classic-block-storage?topic=vpc-on-classic-block-storage-getting-started).
 
