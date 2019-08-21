@@ -25,7 +25,7 @@ automatically created as a primary boot volume and attached to the instance. You
 {:shortdesc}
 
 - For more information about block storage volumes for the VPC, see [About Block Storage for VPC](/docs/vpc-on-classic-block-storage?topic=vpc-on-classic-block-storage-block-storage-about).  
-- To get started creating volumes independent of virtual server instance provisioning, see [Getting Started with {{site.data.keyword.block_storage_is_short}}](/docs/vpc-on-classic-block-storage?topic=vpc-on-classic-block-storage-block-storage-getting-started).
+- To get started creating volumes independent of virtual server instance provisioning, see [Getting Started with {{site.data.keyword.block_storage_is_short}}](/docs/vpc-on-classic-block-storage?topic=vpc-on-classic-block-storage-getting-started).
 
 By default, boot and data volumes are encrypted with IBM-managed encryption. You can also encrypt your volumes using your own encyption keys, during instance provisioning or when [creating a standalone volume](/docs/vpc-on-classic-block-storage?topic=vpc-on-classic-block-storage-block-storage-encryption).  
 
