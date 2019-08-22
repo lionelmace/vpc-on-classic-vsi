@@ -148,6 +148,6 @@ navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastr
 After you import custom images, you can deploy and manage them from the Custom images page. 
 
 You can manage an image by using the {{site.data.keyword.cloud_notm}} console.
-1. In [{{site.data.keyword.cloud_notm}} console)](https://console.cloud.ibm.com/vpc), 
+1. In [{{site.data.keyword.cloud_notm}} console](https://console.cloud.ibm.com/vpc), 
 navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > Custom Images**.
 2. From your list of custom images, you can click **...** and select from the available options. 
