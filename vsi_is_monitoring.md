@@ -15,6 +15,7 @@ subcollection: vpc-on-classic-vsi
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:tip: .tip}
+{:external: target="_blank" .external}
 
 # Monitoring virtual server instances
 {: #monitoring}
@@ -27,4 +28,4 @@ To make sure you are always aware of any issues with your {{site.data.keyword.vs
 
 <!-- For an activity log that shows when the instance started, stopped, rebooted, or any errors or warnings, click **Activity** in the navigation pane. -->
 
-For more information about determining when an instance is started, stopped, reset, or the operating system is restarted, see [Viewing instance actions](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-managing-virtual-servers-cli#viewing-instance-actions) with the CLI or [Create an instance action](https://cloud.ibm.com/apidocs/vpc-on-classic#create-an-instance-action) with the API.
+For more information about determining when an instance is started, stopped, reset, or the operating system is restarted, see [Viewing instance actions](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-managing-virtual-servers-cli#viewing-instance-actions) with the CLI or [Create an instance action](https://cloud.ibm.com/apidocs/vpc-on-classic#create-an-instance-action){: external} with the API.
