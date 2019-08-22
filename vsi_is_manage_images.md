@@ -17,6 +17,8 @@ subcollection: vpc-on-classic-vsi
 {:important: .important}
 {:note: .note}
 {:table: .aria-labeledby="caption"}
+{:external: target="_blank" .external}
+
 
 # Importing and managing images
 {: #managing-images}
@@ -51,7 +53,7 @@ Complete the following steps to ensure that your own Linux custom image can be s
 1. Begin with a single image file in VHD format. 
 
 2. Install the latest xe-guest-utilities Xen tools. Complete the following steps:
-    1. Download the latest Citrix Hypervisor ISO (version 8.0 and later) from Citrix: [https://www.citrix.com/downloads/citrix-hypervisor/![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.citrix.com/downloads/citrix-hypervisor/).
+    1. Download the latest Citrix Hypervisor ISO (version 8.0 and later) from Citrix: [https://www.citrix.com/downloads/citrix-hypervisor/](https://www.citrix.com/downloads/citrix-hypervisor/){: external}.
 
     2. Mount the ISO by running the following command:
 
@@ -93,7 +95,7 @@ Complete the following steps to ensure that your own Linux custom image can be s
         ```
         {: pre}
         
-2. Make sure that your image is cloud-init enabled. 
+3. Make sure that your image is cloud-init enabled. 
 
     * For more information about configuring images, see
 [cloud-init documentation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloudinit.readthedocs.io/en/latest/).
@@ -101,7 +103,7 @@ Complete the following steps to ensure that your own Linux custom image can be s
 environment by using the [Config Drive ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html) - Version 2 datasource to supply the metadata.
     * Linux images require Cloud-init version 0.7.7 or greater.
     
-3. Upload your image to {{site.data.keyword.cos_full_notm}}. For more information about uploading to {{site.data.keyword.cos_full_notm}}, see [Upload data](/docs/services/cloud-object-storage?topic=cloud-object-storage-upload).    
+4. Upload your image to {{site.data.keyword.cos_full_notm}}. For more information about uploading to {{site.data.keyword.cos_full_notm}}, see [Upload data](/docs/services/cloud-object-storage?topic=cloud-object-storage-upload).    
     
 ### Creating a Windows custom image
 {: #create-windows-custom-image}
@@ -112,17 +114,18 @@ Complete the following steps to ensure that your own Windows custom image can be
 
 2. Install the latest xe-guest-utilities Xen tools. Complete the following steps:
 
-    1. Download the latest Citrix Hypervisor ISO (version 8.0 and later) from Citrix: [https://www.citrix.com/downloads/citrix-hypervisor/![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.citrix.com/downloads/citrix-hypervisor/).
+    1. Download the latest Citrix Hypervisor ISO (version 8.0 and later) from Citrix: [https://www.citrix.com/downloads/citrix-hypervisor/](https://www.citrix.com/downloads/citrix-hypervisor/){: external}
+.
     2. Mount the ISO by right-clicking the .iso file that you downloaded and selecting **Mount**.
     3. Navigate to the Windows Installer, for example, _managementagent64_, and double-click to open the **Citrix XenServer Windows Management Agent Setup** wizard. Complete the installation wizard to install XenServer Tools.
 
 3. Make sure that your image is cloud-init enabled. 
-    * For more information, see [cloudbase-init’s documentation](https://cloudbase-init.readthedocs.io/en/latest/index.html).
-    * For more information about datasources, see [Datasources ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloudinit.readthedocs.io/en/latest/topics/datasources.html). {{site.data.keyword.cloud_notm}} cloud-init images are created for the
-environment by using the [Config Drive ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html) - Version 2 datasource to supply the metadata.
+    * For more information, see [cloudbase-init’s documentation](https://cloudbase-init.readthedocs.io/en/latest/index.html){: external}.
+    * For more information about datasources, see [Datasources](http://cloudinit.readthedocs.io/en/latest/topics/datasources.html){: external}. {{site.data.keyword.cloud_notm}} cloud-init images are created for the
+environment by using the [Config Drive](http://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html){: external} - Version 2 datasource to supply the metadata.
 
 4. Windows images require the Cloudbase-init Metadata Service for public and private network support in {{site.data.keyword.vpc_short}} infrastructure. You can access the service at
-[https://github.com/softlayer/bluemix-cloudbase-init ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://github.com/softlayer/bluemix-cloudbase-init).
+[https://github.com/softlayer/bluemix-cloudbase-init](https://github.com/softlayer/bluemix-cloudbase-init){: external}.
 
 5. Upload your image to {{site.data.keyword.cos_full_notm}}. For more information about uploading to {{site.data.keyword.cos_full_notm}}, see [Upload data](/docs/services/cloud-object-storage?topic=cloud-object-storage-upload).
 
@@ -134,7 +137,7 @@ When you import a custom image, it's private to the account where you import it.
 When you have an image available in {{site.data.keyword.cos_full_notm}}, you can import it to {{site.data.keyword.vpc_short}} infrastructure by using the {{site.data.keyword.cloud_notm}} console.
 
 1. Make sure that your compatible custom image is available in {{site.data.keyword.cos_full_notm}}. For more information, see [Creating a custom image](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-managing-images#create-deployable-custom-image) and [Uploading data](/docs/services/cloud-object-storage?topic=cloud-object-storage-upload) to {{site.data.keyword.cos_full_notm}}.
-2. In [{{site.data.keyword.cloud_notm}} console ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.cloud.ibm.com/vpc), 
+2. In [{{site.data.keyword.cloud_notm}} console](https://console.cloud.ibm.com/vpc){: external}, 
 navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > Custom Images**.
 3. Click **Import Custom Image**. 
 4. Complete the required fields and click **Create Custom Image**.
@@ -145,6 +148,6 @@ navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastr
 After you import custom images, you can deploy and manage them from the Custom images page. 
 
 You can manage an image by using the {{site.data.keyword.cloud_notm}} console.
-1. In [{{site.data.keyword.cloud_notm}} console ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.cloud.ibm.com/vpc), 
+1. In [{{site.data.keyword.cloud_notm}} console)](https://console.cloud.ibm.com/vpc), 
 navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > Custom Images**.
 2. From your list of custom images, you can click **...** and select from the available options. 
