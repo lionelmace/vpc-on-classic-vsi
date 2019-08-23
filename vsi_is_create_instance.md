@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-06-07"
 
-keywords: virtual server instances, virtual private cloud, boot volume, location select
+keywords: virtual server instances, virtual private cloud, create virtual server, provision virtual server, virtual machine, instance, virtual server, deploy virtual server
 
 subcollection: vpc-on-classic-vsi
 
