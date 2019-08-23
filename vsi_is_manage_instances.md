@@ -22,7 +22,7 @@ subcollection: vpc-on-classic-vsi
 {: #managing-virtual-server-instances}
 [comment]: # (linked help topic)
 
-You can view and manage your {{site.data.keyword.vsi_is_full}} instances from the *Virtual server instances* page in {{site.data.keyword.cloud_notm}} console.
+You can view and manage your {{site.data.keyword.vsi_is_full}} instances from the *Virtual server instances* page in {{site.data.keyword.cloud_notm}} console. Perform tasks such as start, stop, restart, and delete virtual server instances. 
 {:shortdesc}
 
 To manage your instances, complete the following steps.
