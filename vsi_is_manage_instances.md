@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2018-11-14"
 
+keywords: view instance details, virtual server instance, restart virtual server, stop virtual server, instance details, delete virtual server, delete instance
+
 subcollection: vpc-on-classic-vsi
 
 ---
