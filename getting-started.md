@@ -44,7 +44,7 @@ Before you begin, make sure you [created an IBM Cloud VPC](/docs/vpc-on-classic?
 ## Step 1. Log into your {{site.data.keyword.cloud_notm}} account
 {: #vsi-for-vpc-log-in-gs}
 
-Access the {{site.data.keyword.block_storage_is_short}} Order Form from the [{{site.data.keyword.cloud_notm}} catalog](https://{DomainName}/catalog){: external}. Use your IBMid and password.
+Access the {{site.data.keyword.vsi_is_short}} Order Form from the [{{site.data.keyword.cloud_notm}} catalog](https://{DomainName}/catalog){: external}. Use your IBMid and password.
 
 ## Step 2. Generate an SSH key
 {: #vsi-for-vpc-generate-ssh-key-gs}
