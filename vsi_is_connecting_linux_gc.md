@@ -4,8 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2018-11-14"
 
-keywords: private key, IP address, instance, Linux instance
-
+keywords: private key, IP address, instance, Linux instance, ssh key, connect to your instance, connect to your linux instance, connect to your virtual server
 subcollection: vpc-on-classic-vsi
 
 ---
@@ -21,7 +20,7 @@ subcollection: vpc-on-classic-vsi
 # Connecting to your Linux instance
 {: #connecting-to-your-linux-instance}
 
-After you have created your {{site.data.keyword.vsi_is_full}} Linux instance, you can connect to it by completing these steps.
+After you have created your {{site.data.keyword.vsi_is_full}} Linux instance, you can connect to it with your SSH key by completing these steps.
 {:shortdesc}
 
 ## Locating floating IP address
