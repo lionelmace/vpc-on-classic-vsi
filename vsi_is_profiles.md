@@ -50,7 +50,7 @@ The offering is available in the following profiles:
 | bc1-62x248 | 62 | 248 | 16 |
 {: caption="Table 2. Virtual server balanced profile options" caption-side="top"}
 
-All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). For information about network performance, see [Network performance notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#network-perf-notes-for-profiles).
+All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For more information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). For more information about network performance, see [Network performance notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#network-perf-notes-for-profiles).
 
 
 ## Compute
@@ -70,7 +70,7 @@ The offering is available in the following profiles:
 | cc1-32x64 | 32  | 64 | 12 |
 {: caption="Table 3. Virtual server instance compute profile options" caption-side="top"}
 
-All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). For information about network performance, see [Network performance notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#network-perf-notes-for-profiles).
+All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For more information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). For more information about network performance, see [Network performance notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#network-perf-notes-for-profiles).
 
 ## Memory 
 {: #memory}
@@ -89,17 +89,17 @@ The offering is available in the following profiles:
 | mc1-32x256 | 32 | 256 | 12 |
 {: caption="Table 4. Virtual server instance memory profile options" caption-side="top"}
 
-All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). For information about network performance, see [Network performance notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#network-perf-notes-for-profiles).
+All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For more information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). For more information about network performance, see [Network performance notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#network-perf-notes-for-profiles).
 
 ## Storage notes for profiles
 {: #storage-notes-for-profiles}
 
-* A SAN primary boot volume (100GB) is automatically created and attached when you provision an instance.
+* A SAN primary boot volume (100 GB) is automatically created and attached when you provision an instance.
 * Optionally, create a secondary data volume. Volume profiles are available as three predefined IOPS tiers or as custom IOPS. 
     * A [3 IOPS general-purpose tier profile](/docs/vpc-on-classic-block-storage?topic=vpc-on-classic-block-storage-block-storage-profiles#tiers) provides IOPS/GB performance suitable for a virtual server instance Balanced profile.
     * A [5-IOPS tier](/docs/vpc-on-classic-block-storage?topic=vpc-on-classic-block-storage-block-storage-profiles#tiers) profile provides IOPS/GB performance suitable for a virtual server instance Compute profile.
     * A [10-IOPS tier](/docs/vpc-on-classic-block-storage?topic=vpc-on-classic-block-storage-block-storage-profiles#tiers) profile provides IOPS/GB performance suitable for a virtual server instance Memory profile.
-* Pricing for public virtual servers using SAN storage includes virtual CPU, memory, and primary boot volume. Secondary data volumes are priced separately.
+* Pricing for public virtual servers that use SAN storage includes virtual CPU, memory, and primary boot volume. Secondary data volumes are priced separately.
 
 ## Network performance notes for profiles
 {: #network-perf-notes-for-profiles}
@@ -110,10 +110,10 @@ The network performance cap applies for both egress (upload) and ingress (downlo
 
 The network performance cap is not a guaranteed performance throughput statement, but an "up-to" performance statement. 
 
-When you select a profile that has a network performance cap that is higher than 5 Gbps, you must enable Jumbo Frames in the networking configuration of your virtual server instance to ensure that you can achieve network throughput above 5 Gbps. 
+When you select a profile that has a network performance cap that is higher than 5 Gbps, you must enable Jumbo Frames in the networking configuration of your virtual server instance. Changing the network configuration of your virtual server instance  ensures that you can achieve network throughput at speeds greater than 5 Gbps. 
 {:important}
 
-If you select a profile that indicates network performance above 5 Gbps, complete the following steps for your operating system to enable Jumbo Frames so that you can achieve network throughput above 5 Gbps. 
+If you select a profile that indicates network performance greater than 5 Gbps, complete the following steps for your operating system to enable Jumbo Frames. 
 
 ### Configuring jumbo frames for Debian and Ubuntu
 {: #jumbo-frames-debian-ubuntu}
@@ -144,22 +144,22 @@ To increase the maximum transmission unit (MTU) to support ethernet jumbo frames
 ## Viewing profile configurations
 {: #popularprofiles}
 
-You can view available profile configurations using the {{site.data.keyword.cloud_notm}} console or the CLI. In the {{site.data.keyword.cloud_notm}} console, you can select from popular profile configurations that support most common use cases.
+You can view available profile configurations by using the {{site.data.keyword.cloud_notm}} console or the CLI. In the {{site.data.keyword.cloud_notm}} console, you can select from popular profile configurations that support most common use cases.
 
 ### Using the IBM Cloud console
 1. In the {{site.data.keyword.cloud_notm}} console, navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > Virtual server instances**.
-2. From this page, click **New instance**.
-3. You can either select a profile configuration from **Popular profiles** or click **All profiles** to view additional configurations.
+2. From the Virtual server instances for VPC page, click **New instance**.
+3. You can either select a profile configuration from **Popular profiles** or click **All profiles** to view more configurations.
 
 ### Using the CLI
-To view the list of available profiles using the CLI, run the following command:
+To view the list of available profiles by using the CLI, run the following command:
 ```
 $ ibmcloud is instance-profiles
 ```
 {:codeblock}
 
-When using the command line, the following information describes what the output represents. The profile sizes have different ratios of CPU to memory, designed for different workloads:
+When you use the command line, the following information describes what the output represents. The profile sizes have different ratios of CPU to memory, which are designed for different workloads:
 
 *  "b" is balanced, which is a 1:4 ratio
-*  "c" is compute (higher on the CPUs) , which is a 1:2 ratio
+*  "c" is compute (higher on the CPUs), which is a 1:2 ratio
 *  “m” is memory (higher on the memory), which is a 1:8 ratio
