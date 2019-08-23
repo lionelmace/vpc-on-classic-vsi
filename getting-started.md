@@ -23,17 +23,17 @@ subcollection: vpc-on-classic-vsi
 # Getting started with Virtual Servers for VPC
 {: #getting-started}
 
-Use {{site.data.keyword.vsi_is_full}} (VPC) on Classic to provision scalable compute resources in the IBM Cloud.
+Use {{site.data.keyword.vsi_is_full}} (VPC) on Classic to create compute instances in the {{site.data.keyword.cloud_notm}}.
 {:shortdesc}
 
-You can create virtual server instances on demand, configure network and security, and manage storage. All of these features are available in an improved IBM Cloud console. The console is built to provide you with quick and easy access to adjust your environment with your changing workload demands. 
+You can create virtual server instances on demand, configure network and security, and manage storage. All of these features are available in an improved {{site.data.keyword.cloud_notm}} console. The console is built to provide you with quick and easy access to adjust your environment with your changing workload demands. 
 
 Bet you're anxious to start, so let's get to work creating a Linux instance from {{site.data.keyword.cloud_notm}} console.
 
 ## Before you begin
 {: #vsi-for-vpc-before-you-begin}
 
-Are you new to {{site.data.keyword.cloud}} and {{site.data.keyword.vsi_is_short}}? The following information might help:
+Are you new to {{site.data.keyword.cloud_notm}} and {{site.data.keyword.vsi_is_short}}? The following information might help:
 
 * Make sure that you sign up for an {{site.data.keyword.cloud_notm}} account. For more information, see [Signing up for {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/docs/account?topic=account-signup#signup){: external}.
 * {{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the classic virtual server offerings, see [IBM Cloud Virtual Servers](/docs/vsi?topic=virtual-servers-getting-started-tutorial).
