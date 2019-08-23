@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-07-23"
 
+keywords: virtual network interface card, vNIC, virtual private cloud, virtual server, instance, security, multiple IP addresses, security group, ACL, access control list
+
 subcollection: vpc-on-classic-vsi
 
 ---
