@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-05-29"
 
+keywords: view instance actions, virtual server instance, restart virtual server, stop virtual server, instance details, delete virtual server, delete instance, cli, command line interface, manage virtual server, manage instances
+
 subcollection: vpc-on-classic-vsi
 
 ---
@@ -21,7 +23,7 @@ subcollection: vpc-on-classic-vsi
 # Managing virtual server instances (CLI)
 {: #managing-virtual-servers-cli}
 
-You can view and manage your {{site.data.keyword.vsi_is_full}} instances by using the command line interface (CLI).
+You can view and manage your {{site.data.keyword.vsi_is_full}} instances by using the command line interface (CLI). Perform tasks such as start, stop, restart, and delete virtual server instances. 
 {:shortdesc}
 
 ## Before you begin
