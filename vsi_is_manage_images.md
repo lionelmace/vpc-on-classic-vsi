@@ -4,6 +4,8 @@ copyright:
   years: 2019
 lastupdated: "2019-08-08"
 
+keywords: import custom image, custom image, deploy custom image, use custom image for virtual server, create custom image, custom Windows image, custom Linux image, provision instance with custom image
+
 subcollection: vpc-on-classic-vsi
 
 ---
@@ -22,6 +24,9 @@ subcollection: vpc-on-classic-vsi
 
 # Importing and managing images
 {: #managing-images}
+
+You can import your own custom image to the {{site.data.keyword.vpc_short}} infrastructure. Then, you can use your custom image to create new virtual server instances.
+{:shortdesc}
 
 ## Before you begin
 {: #prereq-custom-images}
