@@ -4,6 +4,8 @@ copyright:
   years: 2019
 lastupdated: "2019-07-23"
 
+keywords: monitor virtual server instances, monitor cpu, monitor memory, monitor network usage, monitor vms, monitor instances
+
 subcollection: vpc-on-classic-vsi
 
 ---
