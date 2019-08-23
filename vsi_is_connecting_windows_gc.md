@@ -23,7 +23,7 @@ subcollection: vpc-on-classic-vsi
 # Connecting to your Windows instance
 {: #connecting-to-your-windows-instance}
 
-After you have created your {{site.data.keyword.vsi_is_full}} Windows instance, you can connect to it by completing these steps.
+After you have created your {{site.data.keyword.vsi_is_full}} Windows instance, you must decrypt your password so that you can connect to your instance.
 {:shortdesc}
 
 ## Before you begin
