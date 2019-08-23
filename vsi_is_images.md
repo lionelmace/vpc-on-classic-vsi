@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-08-01"
 
+keywords: image, stock image, custom image, image template, virtual private cloud, virtual server
+
 subcollection: vpc-on-classic-vsi
 
 ---
