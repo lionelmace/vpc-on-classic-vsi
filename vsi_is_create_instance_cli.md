@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-05-30"
 
-keywords: virtual server instances, command line interface, creating virtual server instances
+keywords: virtual server instances, virtual private cloud, create virtual server, provision virtual server, virtual machine, instance, virtual server, deploy virtual server, CLI, command line interface, create virtual server with cli
 
 subcollection: vpc-on-classic-vsi
 
