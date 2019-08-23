@@ -4,6 +4,8 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-06-07"
 
+keywords: add ssh key, delete ssh key, ssh key, manage ssh key, virtual server instance, instance, virtual server
+
 subcollection: vpc-on-classic-vsi
 
 ---
@@ -19,12 +21,15 @@ subcollection: vpc-on-classic-vsi
 # Managing SSH keys
 {: #managing-ssh-keys}
 
-## Before you Begin
-{: #prereq-ssh-key-available}
-
-To access {{site.data.keyword.vsi_is_full}} instances, you must have an SSH key available to use. You can manage SSH keys in {{site.data.keyword.cloud_notm}} console and by using the CLI. 
+To access {{site.data.keyword.vsi_is_full}} instances, you must have an SSH key available to use. You can add and delete SSH keys in {{site.data.keyword.cloud_notm}} console and by using the CLI. 
+{:shortdesc}
 
 Managing keys by using the {{site.data.keyword.cloud_notm}} console or CLI has no effect on keys in instances that are already created. (For an existing Linux instance, you can edit keys directly in the `~/.ssh/` directory of the instance.)
+
+## Before you begin
+{: #prereq-ssh-key-available}
+
+To create a virtual server instance, you must have an SSH key uploaded and available so that you can connect to your instance after it's provisioned.
 
 For more information about locating or generating an SSH key, see [SSH keys](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-ssh-keys#ssh-keys).
 {: tip}
@@ -33,7 +38,7 @@ For more information about locating or generating an SSH key, see [SSH keys](/do
 {: #managing-ssh-keys-with-ibm-cloud-console}
 
 When you provision a virtual server, you can select from available SSH keys or upload a new one. You cannot generate SSH keys in {{site.data.keyword.cloud_notm}} console.
-{:shortdesc}
+
 
 You can manage and delete SSH keys by using the {{site.data.keyword.cloud_notm}} console.
 1. In [{{site.data.keyword.cloud_notm}} console ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.cloud.ibm.com/vpc), navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > SSH keys**.
