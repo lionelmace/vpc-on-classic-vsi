@@ -26,22 +26,22 @@ subcollection: vpc-on-classic-vsi
 Use {{site.data.keyword.vsi_is_full}} (VPC) on Classic to provision scalable compute resources in the IBM Cloud.
 {:shortdesc}
 
-You can create virtual server instances on demand, configure network and security, and manage storage. All of this is available in an improved IBM Cloud console. The console is built to provide you with quick and easy access to adjust your environment with your changing workload demands. 
+You can create virtual server instances on demand, configure network and security, and manage storage. All of these features are available in an improved IBM Cloud console. The console is built to provide you with quick and easy access to adjust your environment with your changing workload demands. 
 
-Bet you're anxious to get started, so let's get straight to business creating a Linux instance from {{site.data.keyword.cloud_notm}} console.
+Bet you're anxious to start, so let's get to work creating a Linux instance from {{site.data.keyword.cloud_notm}} console.
 
 ## Before you begin
 {: #vsi-for-vpc-before-you-begin}
 
 Are you new to {{site.data.keyword.cloud}} and {{site.data.keyword.vsi_is_short}}? The following information might help:
 
-* Make sure that you've signed up for an {{site.data.keyword.cloud_notm}} account. For more information, see [Signing up for {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/docs/account?topic=account-signup#signup){: external}.
+* Make sure that you sign up for an {{site.data.keyword.cloud_notm}} account. For more information, see [Signing up for {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/docs/account?topic=account-signup#signup){: external}.
 * {{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the classic virtual server offerings, see [IBM Cloud Virtual Servers](/docs/vsi?topic=virtual-servers-getting-started-tutorial).
 
-Before you begin, make sure you [created an IBM Cloud VPC](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started) on Classic.
+Before you begin, make sure that you [created an IBM Cloud VPC](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started) on Classic.
 {:important}
 
-## Step 1. Log into your {{site.data.keyword.cloud_notm}} account
+## Step 1. Log in to your {{site.data.keyword.cloud_notm}} account
 {: #vsi-for-vpc-log-in-gs}
 
 Access the {{site.data.keyword.vsi_is_short}} Order Form from the [{{site.data.keyword.cloud_notm}} catalog](https://{DomainName}/catalog){: external}. Use your IBMid and password.
