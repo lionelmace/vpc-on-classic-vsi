@@ -27,7 +27,7 @@ subcollection: vpc-on-classic-vsi
 You can create {{site.data.keyword.vsi_is_full}} from the *Virtual server instances* page in {{site.data.keyword.cloud_notm}} console.
 {:shortdesc}
 
-Before you get started, make sure you have [created an IBM Cloud VPC](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started).
+Before you get started, make sure that you [created an IBM Cloud VPC](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started).
 {:important}
 
 To create an instance, select the following instance details.
@@ -81,17 +81,17 @@ To create an instance, select the following instance details.
     <tr>
     <td>User data</td>
     <td>
-    <p>You can add user data that automatically performs common configuration tasks or runs scripts. <p>For more information, see [User data](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-user-data#user-data).</p>
+    <p>You can add user data that automatically completes common configuration tasks or runs scripts. <p>For more information, see [User data](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-user-data#user-data).</p>
     </td>
     </tr>
     <tr>
     <td>Boot volume</td>
-    <td><p>The default boot volume size for all profiles is 100 GB. By default the boot volume includes provider managed encryption. If you want to use customer managed encryption, you can edit the details of the boot volume. For more information, see [Storage](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-storage#storage).</p>
+    <td><p>The default boot volume size for all profiles is 100 GB. By default the boot volume includes provider-managed encryption. If you want to use customer-managed encryption, you can edit the details of the boot volume. For more information, see [Storage](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-storage#storage).</p>
     </td>
     </tr>
     <tr>
     <td>Image</td>
-    <td><p>All images use cloud-init, which allows you to enter user metadata associated with the instance for post provisioning scripts.</p>
+    <td><p>All images are cloud-init enabled. With cloud-init enabled images, you can associate user metadata with the instance through post provisioning scripts.</p>
     <p>For more information, see [Images](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-images#images).</p>
     </td>
     </tr>
@@ -102,14 +102,14 @@ To create an instance, select the following instance details.
     </tr>
     <tr>
     <td>Network interfaces</td>
-    <td>Assign networking options to connect into the IBM Cloud VPC. You can create and assign up to 5 network interface cards to each instance. For more information, see [Multiple IP addresses](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-network-security-options#network-security-options).</td>
+    <td>Assign networking options to connect into the IBM Cloud VPC. You can create and assign up to five network interface cards to each instance. For more information, see [Multiple IP addresses](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-network-security-options#network-security-options).</td>
     </tr>
     </TBODY>
     </table>
 
     Your *Cost summary* displays on the right side of the *New virtual server instance* page.
 
-3. Click **Create virtual server instance** when you are ready to provision. A series of emails is sent to your administrator: acknowledgment of the virtual server instance order, order approval and processing, and a message stating the instance is created.
+3. Click **Create virtual server instance** when you are ready to provision. A series of emails is sent to your administrator: acknowledgment of the virtual server instance order, order approval and processing, and a message that states the instance is created.
 
 Do you prefer to create an instance using the CLI? For more information, see [Creating an instance using the CLI](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-creating-virtual-servers-cli#creating-virtual-servers-cli).
 {: tip}
@@ -129,4 +129,5 @@ To reserve and associate a floating IP address, complete the following steps.
 ## Next steps
 {: #next-connecting-to-instance}
 
-You are now ready to connect to your instance. For more information, see [Connecting to your Linux instance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-connecting-to-your-linux-instance#connecting-to-your-linux-instance) or [Connecting to your Windows instance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-connecting-to-your-windows-instance#connecting-to-your-windows-instance).
+You are ready to connect to your instance. For more information, see [Connecting to your Linux instance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-connecting-to-your-linux-instance#connecting-to-your-linux-instance) or [Connecting to your Windows instance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-connecting-to-your-windows-instance#connecting-to-your-windows-instance).
+
