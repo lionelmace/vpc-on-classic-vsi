@@ -18,6 +18,7 @@ subcollection: vpc-on-classic-vsi
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # Creating virtual server instances with customer-managed encryption
 {: #creating-instances-byok}
@@ -28,7 +29,7 @@ You can create {{site.data.keyword.vsi_is_full}} that use customer-managed encry
 ## Supported key management services for customer-managed encryption
 {: #kms-for-byok}
 
-You can use the key management service that works best for your needs. {{site.data.keyword.keymanagementserviceshort}} and {{site.data.keyword.hscrypto}} (available in certain [regions](/docs/services/hs-crypto?topic=hs-crypto-regions#regions)) use a common key provider API to provide a consistent approach for managing encryption keys.  Behind the scenes, {{site.data.keyword.cloud_notm}} data centers provide a dedicated hardware security module (HSM) to protect your keys.  The following key management services are supported with customer-managed encryption for block storage volumes: 
+You can use the key management service that works best for your needs. {{site.data.keyword.keymanagementserviceshort}} and {{site.data.keyword.hscrypto}} (available in certain [regions](/docs/services/hs-crypto?topic=hs-crypto-regions#regions)) use a common key provider API to provide a consistent approach for managing encryption keys.  Behind the scenes, {{site.data.keyword.cloud_notm}} data centers provide a dedicated hardware security module (HSM) to protect your keys.  The following key management services are supported by customer-managed encryption for block storage volumes: 
 
 | Key Management Service | HSM Encryption Certification |
 | ----- | ----- |
@@ -39,7 +40,7 @@ You can use the key management service that works best for your needs. {{site.da
 ## Prerequisites
 {: #byok-vsi-prereqs}
 
-To create a virtual server instance that uses customer-managed encryption for the block storage volumes, you must have a key management service provisioned and a customer root key added. You must also authorize access between Cloud Block Storage and the key management service. When you've completed these prerequisites, you can start creating instances that use customer-managed encryption for the block storage volumes. 
+To create a virtual server instance that uses customer-managed encryption for the block storage volumes, you must have a key management service that is provisioned and a customer root key added. You must also authorize access between Cloud Block Storage and the key management service. When these prerequisites are complete, you can start creating instances that use customer-managed encryption for the block storage volumes. 
 
 The following example steps are specific to {{site.data.keyword.keymanagementserviceshort}}, but the general flow also applies to {{site.data.keyword.hscrypto}}. If you're using {{site.data.keyword.hscrypto}}, see the [{{site.data.keyword.hscrypto}} information](/docs/services/hs-crypto?topic=hs-crypto-get-started#get-started) for corresponding instructions.
 {:note}
@@ -55,31 +56,31 @@ The following example steps are specific to {{site.data.keyword.keymanagementser
 3. From IBM {{site.data.keyword.iamshort}} (IAM), [authorize access](/docs/iam?topic=iam-serviceauth#serviceauth) between **Cloud 
 Block Storage** (source service) and **{{site.data.keyword.keymanagementserviceshort}}** (target service).
 
-## Provisioning virtual server instances with volumes that use customer managed encryption
+## Provisioning virtual server instances with volumes that use customer-managed encryption
 {: #provision-byok-ui}
 
 When you provision a virtual server instance, you can specify customer-managed encryption for your boot volume and any data volumes that you want to add at provision time. If you want, you can use a combination of provider-managed encryption and customer-managed encryption for the volumes that are associated with your instance.
 
-1. In [{{site.data.keyword.cloud_notm}} console ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.cloud.ibm.com/vpc), navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > Virtual server instances**. Click **New instance** and complete the required fields. (For more information about creating instances, see [Creating virtual server instances](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-creating-virtual-servers#creating-virtual-servers).) 
+1. In [{{site.data.keyword.cloud_notm}} console](https://console.cloud.ibm.com/vpc){: external}, navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > Virtual server instances**. Click **New instance** and complete the required fields. (For more information about creating instances, see [Creating virtual server instances](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-creating-virtual-servers#creating-virtual-servers).) 
 2. In the **Boot volume** section, the default mode of encryption is _Provider managed_ encryption. To specify customer-managed encryption, click the pencil icon in the boot volume row. On the **Edit boot volume** page, update the fields in the **Encryption** section. See the following table for more information. When your changes are complete, click **Apply**.
-3. In the **Attached block storage volume** section, you can click **New block storage volume** to add a data volume and specify customer managed encryption if you choose. On the **New block storage volume** page, update the fields in the **Encryption** section. See the following table for more information. When your changes are complete, click **Attach**.
+3. In the **Attached block storage volume** section, you can click **New block storage volume** to add a data volume and specify customer-managed encryption if you choose. On the **New block storage volume** page, update the fields in the **Encryption** section. See the following table for more information. When your changes are complete, click **Attach**.
 
 | Field | Value |
 | ----- | ----- |
-| Encryption | _Provider managed_ is the default encryption mode. To use customer-managed encryption, select a key management service from the drop-down list. The key management service instance should include the customer root key that you want to use for customer-managed encryption. |
-| Encryption service instance | If you have multiple key management service instances provisioned in your account, select the one that includes the customer root key that you want to use for customer-managed encryption. |
+| Encryption | _Provider managed_ is the default encryption mode. To use customer-managed encryption, select a key management service from the drop-down list. The key management service instance must include the customer root key that you want to use for customer-managed encryption. |
+| Encryption service instance | If you have multiple key management service instances that are provisioned in your account, select the one that includes the customer root key that you want to use for customer-managed encryption. |
 | Key name | Select the data encryption key within the key management service instance that you want to use for encrypting the volume. | 
 | Key ID | Displays the key ID that is associated with the data encryption key that you selected. | 
-{: caption="Table 1. Values for specifying customer managed encryption of volumes" caption-side="top"}
+{: caption="Table 1. Values for specifying customer-managed encryption of volumes" caption-side="top"}
 
-## Using the CLI to provision instances and volumes with customer managed encryption
+## Using the CLI to provision instances and volumes with customer-managed encryption
 {: #provision-byok-cli}
 
-To use the CLI to create a virtual server instance with volumes that use customer managed encryption, you can use the `ibmcloud is instance-create` command and reference a JSON to attach volumes that use customer-managed encryption. 
+To use the CLI to create a virtual server instance with volumes that use customer-managed encryption, you can use the `ibmcloud is instance-create` command and reference a JSON to attach volumes that use customer-managed encryption. 
 
 1. Obtain the CRN of the root key in your desired key management service instance. The following example is specific to {{site.data.keyword.keymanagementserviceshort}}. 
     
-    1. If you don't already have the {{site.data.keyword.keymanagementserviceshort}} CLI plugin installed, install it by running the following command: 
+    1. If you need to install the {{site.data.keyword.keymanagementserviceshort}} CLI plug-in, run the following command: 
        ```
        ibmcloud plugin install key-protect -r 'IBM Cloud'
        ```
@@ -119,7 +120,7 @@ To use the CLI to create a virtual server instance with volumes that use custome
        ```
        {:screen}
        
-       where the instance ID is the string following the final `::` in the CRN, `7mnxxxo8-91xx-23px-q4rs-xxtuv5w6xxx7`. 
+       where the instance ID is the string that follows the final `::` in the CRN, `7mnxxxo8-91xx-23px-q4rs-xxtuv5w6xxx7`. 
     
     4. List the available keys and their associated CRNs within your desired {{site.data.keyword.keymanagementserviceshort}} service instance by running the following command:
        ```
@@ -148,12 +149,12 @@ To use the CLI to create a virtual server instance with volumes that use custome
        ```
        {:screen}
        
-2. Use the [ibmcloud is instance-create](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference#instance-create) command and attach the necessary JSON files that specify customer managed encryption for the boot volume and any secondary data volumes that you want to include. The `encryption_key` parameter must include a valid CRN for the root key in the Key Protect service. See the following [JSON file examples](#vsi-vol-attachment-json) of a boot volume JSON and secondary volume JSON. (For more information about creating instances, see [Creating virtual server instances (CLI)](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-creating-virtual-servers-cli).)
+2. Use the [ibmcloud is instance-create](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference#instance-create) command and attach the necessary JSON files that specify customer-managed encryption for the boot volume and any secondary data volumes that you want to include. The `encryption_key` parameter must include a valid CRN for the root key in the Key Protect service. See the following [JSON file examples](#vsi-vol-attachment-json) of a boot volume JSON and secondary volume JSON. (For more information about creating instances, see [Creating virtual server instances (CLI)](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-creating-virtual-servers-cli).)
 
 ## Creating a volume attachment in JSON format
 {: #vsi-vol-attachment-json}
 
-When creating either a boot volume or data volume during VSI provisioning, you must specify a JSON file to define the volume parameters. See the following JSON file examples.
+When you create either a boot volume or data volume during VSI provisioning, you must specify a JSON file to define the volume parameters. See the following JSON file examples.
 
 ### Example boot volume JSON file
 {: #boot-volume-byok-json}
@@ -203,3 +204,4 @@ The following example defines a general-purpose secondary (data) volume and spec
 ]
 ```
 {:codeblock}
+
