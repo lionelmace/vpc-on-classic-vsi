@@ -21,13 +21,13 @@ subcollection: vpc-on-classic-vsi
 {: #user-data}
 [comment]: # (linked help topic)
 
-When you create an {{site.data.keyword.vsi_is_full}} instance, you can add user data that automatically performs common configuration tasks or runs scripts. In the **User Data** field on the order form, you can enter optional cloud-init user data for the server.
+When you create an {{site.data.keyword.vsi_is_full}} instance, you can add user data that automatically completes common configuration tasks or runs scripts. In the **User Data** field on the order form, you can enter optional cloud-init user data for the server.
 {:shortdesc}
 
 ## User data examples for Linux 
 {: #user-data-examples-for-linux}
 
-The following example shows how a Linux user can add a new user and provide the user with an authorized SSH key. The **Name** field will have the public key added to `~/.ssh/authorized_keys`. 
+The following example shows how a Linux user can add a user and provide the user with an authorized SSH key. The **Name** field has the public key added to `~/.ssh/authorized_keys`. 
 
 ```
 #cloud-config
@@ -51,7 +51,7 @@ echo <sshKey> > ~/.ssh/authorized_keys
 ```
 {:codeblock}
 
-You can paste one of these examples directly into the **User Data** field. The user data is then available to the virtual server instance during provisioning. 
+You can paste one of these examples directly into the **User Data** field. The user data is then available to the virtual server instance when it's created. 
 
 For more Linux user data examples and information, see [Cloud config examples ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloudinit.readthedocs.io/en/18.5/topics/examples.html){:new_window}.
 
