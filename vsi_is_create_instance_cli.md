@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-05-30"
+lastupdated: "2019-06-04"
 
-keywords: virtual server instances, virtual private cloud, create virtual server, provision virtual server, virtual machine, instance, virtual server, deploy virtual server, CLI, command line interface, create virtual server with cli
+keywords: virtual server instances, virtual private cloud, create virtual server, provision virtual server, virtual machine, instance, virtual server, deploy virtual server, CLI, command line interface
 
 subcollection: vpc-on-classic-vsi
 
@@ -29,22 +29,22 @@ You can create {{site.data.keyword.vsi_is_full}} instances by using the command 
 ## Before you begin
 {: #prereq-creating-virtual-servers-cli}
 
-1. Ensure you have downloaded, installed, and initialized the following CLI plug-ins:
+1. Ensure that you downloaded, installed, and initialized the following CLI plug-ins:
     * {{site.data.keyword.cloud_notm}} CLI
-    * The vpc-infrastructure plugin
+    * The vpc-infrastructure plug-in
 
    For more information, see [IBM Cloud CLI for VPC Reference](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference).
    
-   When you install the vpc-infrastructure plugin for the first time, you must set the target generation to gen 1, `ibmcloud is target --gen 1`.
+   When you install the vpc-infrastructure plug-in for the first time, you must set the target generation to gen 1, `ibmcloud is target --gen 1`.
    {:important}
    
    
-2. Make sure you have already [created an {{site.data.keyword.vpc_short}}](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started).
+2. Make sure that you already [created an {{site.data.keyword.vpc_short}}](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started).
 
-## Gathering information to create an instance using the CLI
+## Gathering information to create an instance by using the CLI
 {: #gathering-information-to-create-an-instance-using-the-cli}
 
-Ready to create an instance? Before you can run the `ibmcloud is instances` command, you'll need to know the details about the instance, such as what profile or image you want to use.
+Ready to create an instance? Before you can run the `ibmcloud is instances` command, you need to know the details about the instance, such as what profile or image you want to use.
 
 Let's gather that information first:
 
@@ -73,7 +73,7 @@ Use the following commands to determine the required information for creating a 
    ```
    {:screen}
 
-2. List the zones associated with the desired region.
+2. List the zones associated with the specified region.
    ```
    $ ibmcloud is zones us-south
    ```
@@ -100,7 +100,7 @@ Use the following commands to determine the required information for creating a 
    ```
    {:screen}
 
-   If you do not have one available, you can create an {{site.data.keyword.vpc_short}} by using the `ibmcloud is vpc-create` command. For more information about creating an {{site.data.keyword.vpc_short}}, see [IBM Cloud VPC CLI Reference](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference#vpc-create).
+   If you do not have an {{site.data.keyword.vpc_short} available, you can create one by using the `ibmcloud is vpc-create` command. For more information about creating an {{site.data.keyword.vpc_short}}, see [IBM Cloud VPC CLI Reference](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference#vpc-create).
 
 4. List the subnets that are associated with the {{site.data.keyword.vpc_short}}.
    ```
@@ -117,7 +117,7 @@ Use the following commands to determine the required information for creating a 
    ```
    {:screen}
 
-   If you do not have one available, you can create a subnet using the `ibmcloud is subnet-create` command. For more information about creating a subnet, see [IBM Cloud VPC CLI Reference](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference#subnets).
+   If you do not have a subnet available, you can create one by using the `ibmcloud is subnet-create` command. For more information about creating a subnet, see [IBM Cloud VPC CLI Reference](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference#subnets).
 
 5. List the available profiles for creating your instance.
    ```
@@ -166,12 +166,12 @@ Use the following commands to determine the required information for creating a 
    ```
    {:screen}
 
-   If you do not have one available, you can create an SSH key using the `ibmcloud is key-create` command. You can add SSH keys to your instance only when you initially create the instance. For more information about managing SSH keys, see [Managing SSH keys](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-managing-ssh-keys#managing-ssh-keys).
+   If you do not have an SSH key available, you can create one by using the `ibmcloud is key-create` command. You can add SSH keys to your instance only when you initially create the instance. For more information about managing SSH keys, see [Managing SSH keys](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-managing-ssh-keys#managing-ssh-keys).
 
 ## Creating an instance using the CLI
 {: #creating-an-instance-using-the-cli}
 
-After you know these values, use them to run the `instance-create` command. In addition to the information that you gathered, you must specify a name for the instance. The following example shows the command in action (using generic x and 123 values for example purposes only).  
+After you know these values, use them to run the `instance-create` command. You must also specify a name for the instance. The following example shows the command in action (using generic x and 123 values, for example purposes only).  
 
 When you provision an instance, a 100 GB block storage volume is automatically created as a primary boot volume and attached to the instance. The following example shows how to include a secondary volume with the `--volume-attach` parameter. Including a secondary volume is optional.
 {:note}
@@ -190,7 +190,7 @@ When you provision an instance, a 100 GB block storage volume is automatically c
    ```
    {:codeblock}
 
-   For example, if you are creating an instance called _my-instance_ in _us-south-2_ and using the _bc1-2x4_ profile, your `instance-create` command would look similar to the following sample:
+   For example, if you are creating an instance that is called _my-instance_ in _us-south-2_ and using the _bc1-2x4_ profile, your `instance-create` command would look similar to the following sample:
 
    ```
    $ ibmcloud is instance-create \
@@ -205,7 +205,7 @@ When you provision an instance, a 100 GB block storage volume is automatically c
    ```
    {:codeblock}
 
-   where:
+   Where:
    - `INSTANCE_NAME` is _my-instance_
    - `VPC_ID` is _VPC_ID_
    - `ZONE_NAME` is  _us-south-2_
@@ -217,7 +217,7 @@ When you provision an instance, a 100 GB block storage volume is automatically c
 
    For this example, you'd see the following responses. 
    
-   The following response will vary depending on what optional values you use.
+   The following response varies depending on what optional values you use.
    {:note}
    
    ```
@@ -328,7 +328,5 @@ Do you prefer to create an instance using the {{site.data.keyword.cloud_notm}} c
 <!-- A series of emails are sent to your administrator: acknowledgment of the virtual server instance order, order approval and processing, and a message stating the instance is created. -->
 
 After the server is created, you can connect to your instance. For more information, see [Connecting to your Linux instance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-connecting-to-your-linux-instance#connecting-to-your-linux-instance) or [Connecting to your Windows instance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-connecting-to-your-windows-instance#connecting-to-your-windows-instance).
-
-
 
 
