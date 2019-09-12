@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-07-23"
+lastupdated: "2019-09-12"
 
 keywords: virtual network interface card, vNIC, virtual private cloud, virtual server, instance, security, multiple IP addresses, security group, ACL, access control list
 
@@ -36,7 +36,8 @@ A virtual network interface card (vNIC) is used to connect a virtual server to a
 * You can assign security groups to each vNIC.
 * You can change the name of any existing vNIC.
 
-The profile that is selected when an instance is created determines the network performance cap for the instance, 1 - 16 Gbps. Bandwidth is distributed across the vNICs that are attached to the virtual server instance. 
+The profile that is selected when an instance is created determines the network performance cap for the instance, 1 - 16 Gbps. Bandwidth is distributed across the vNICs that are attached to the virtual server instance. For more information, see 
+[Configuring network performance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-configuring-network-performance).
 
 ## Networking options
 {: #networking-options}
