@@ -52,7 +52,9 @@ The offering is available in the following profiles:
 | bc1-62x248 | 62 | 248 | 16 |
 {: caption="Table 2. Virtual server balanced profile options" caption-side="top"}
 
-All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For more information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). For more information about network performance, see [Network performance notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#network-perf-notes-for-profiles).
+All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For more information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). 
+
+If you select a profile that has a network performance cap that is higher than 5 Gbps, you must enable Jumbo Frames in the networking configuration of your virtual server instance. For more information, see [Configuring network performance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-configuring-network-performance).
 
 
 ## Compute
@@ -72,7 +74,9 @@ The offering is available in the following profiles:
 | cc1-32x64 | 32  | 64 | 12 |
 {: caption="Table 3. Virtual server instance compute profile options" caption-side="top"}
 
-All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For more information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). For more information about network performance, see [Network performance notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#network-perf-notes-for-profiles).
+All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For more information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). 
+
+If you select a profile that has a network performance cap that is higher than 5 Gbps, you must enable Jumbo Frames in the networking configuration of your virtual server instance. For more information, see [Configuring network performance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-configuring-network-performance).
 
 ## Memory 
 {: #memory}
@@ -91,7 +95,9 @@ The offering is available in the following profiles:
 | mc1-32x256 | 32 | 256 | 12 |
 {: caption="Table 4. Virtual server instance memory profile options" caption-side="top"}
 
-All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For more information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). For more information about network performance, see [Network performance notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#network-perf-notes-for-profiles).
+All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For more information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). 
+
+If you select a profile that has a network performance cap that is higher than 5 Gbps, you must enable Jumbo Frames in the networking configuration of your virtual server instance. For more information, see [Configuring network performance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-configuring-network-performance).
 
 ## Storage notes for profiles
 {: #storage-notes-for-profiles}
@@ -103,45 +109,6 @@ All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linu
     * A [10-IOPS tier](/docs/vpc-on-classic-block-storage?topic=vpc-on-classic-block-storage-block-storage-profiles#tiers) profile provides IOPS/GB performance suitable for a virtual server instance Memory profile.
 * Pricing for public virtual servers that use SAN storage includes virtual CPU, memory, and primary boot volume. Secondary data volumes are priced separately.
 
-## Network performance notes for profiles
-{: #network-perf-notes-for-profiles}
-
-Network performance is distributed across the virtual network interface cards (vNICs) that are attached to the virtual server instance. For example, if you provision a virtual server instance with a 62 vCPU profile that has a network performance cap of 16 Gbps and 4 vNICs attached, each vNIC is capped at 4 Gbps. The network performance distribution setting across vNICs cannot be modified.
-
-The network performance cap applies for both egress (upload) and ingress (download) traffic. For example, if you have a 62 vCPU profile the network performance cap is 16 Gbps egress and 16 Gbps ingress. 
-
-The network performance cap is not a guaranteed performance throughput statement, but an "up-to" performance statement. 
-
-When you select a profile that has a network performance cap that is higher than 5 Gbps, you must enable Jumbo Frames in the networking configuration of your virtual server instance. Changing the network configuration of your virtual server instance  ensures that you can achieve network throughput at speeds greater than 5 Gbps. 
-{:important}
-
-If you select a profile that indicates network performance greater than 5 Gbps, complete the following steps for your operating system to enable Jumbo Frames. 
-
-### Configuring jumbo frames for Debian and Ubuntu
-{: #jumbo-frames-debian-ubuntu}
-
-To increase the maximum transmission unit (MTU) to support ethernet jumbo frames if you are running Debian or Ubuntu, complete the following steps:
-
-1. Check the current setting by running the command, `- ifconfig| grep -i MTU`.
-2. Change the current setting to support 9000 MTU by running the command, `ifconfig eth0 mtu 9000`.
-3. Change the setting to persist after the system is rebooted. Edit the file `/etc/network/interfaces`, and add `MTU=9000`.
-
-### Configuring jumbo frames for CentOS and Red Hat Enterprise Linux
-{: #jumbo-frames-centos-rhel}
-
-To increase the maximum transmission unit (MTU) to support ethernet jumbo frames if you are running CentOS or Red Hat Enterprise Linux, complete the following steps:
-
-1. Check the current setting by running the command, `ip link show dev eth0`
-2. Change the current setting to support 9000 MTU by running the command, `ip link set mtu 9000 dev eth0`.
-3. Change the setting to persist after the system is rebooted. Edit the file `/etc/sysconfig/network-scripts/ifcfg-eth0`,  and add `MTU=9000`.
-
-### Configuring jumbo frames for Windows
-{: #jumbo-frames-windows}
-
-To increase the maximum transmission unit (MTU) to support ethernet jumbo frames if you are running Windows, complete the following steps:
-
-1. Check the current setting by running the command, `netsh interface ipv4 show interfaces`
-2. Change the current setting to support 9000 MTU by running the command, `netsh interface ipv4 set subinterface “12”  mtu=9000 store=persistent`.
 
 ## Viewing profile configurations
 {: #popularprofiles}
