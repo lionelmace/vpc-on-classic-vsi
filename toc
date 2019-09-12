@@ -26,9 +26,10 @@ IBM Cloud Virtual Servers for VPC on Classic
         vsi_is_create_instance_byok.md
 
     {: .topicgroup}
-    Connecting
+    Configuring
         vsi_is_connecting_linux_gc.md
         vsi_is_connecting_windows_gc.md
+        vsi_is_configuring_network_performance.md
 
     {: .topicgroup}
     Managing
