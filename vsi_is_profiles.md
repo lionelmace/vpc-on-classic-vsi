@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-07-09"
+lastupdated: "2019-09-16"
 
 keywords: profile, virtual private cloud, virtual server, instance, balanced, compute, memory
 
@@ -54,7 +54,7 @@ The offering is available in the following profiles:
 
 All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For more information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). 
 
-If you select a profile that has a network performance cap that is higher than 5 Gbps, you must enable Jumbo Frames in the networking configuration of your virtual server instance. For more information, see [Configuring network performance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-configuring-network-performance).
+If you select a profile that has a network performance cap that is higher than 5 Gbps, you must enable Jumbo Frames in the networking configuration of your virtual server instance to achieve the higher network throughput. For more information, see [Configuring virtual server settings for improved network performance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-configuring-network-performance).
 
 
 ## Compute
@@ -76,7 +76,7 @@ The offering is available in the following profiles:
 
 All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For more information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). 
 
-If you select a profile that has a network performance cap that is higher than 5 Gbps, you must enable Jumbo Frames in the networking configuration of your virtual server instance. For more information, see [Configuring network performance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-configuring-network-performance).
+If you select a profile that has a network performance cap that is higher than 5 Gbps, you must enable Jumbo Frames in the networking configuration of your virtual server instance to achieve the higher network throughput. For more information, see [Configuring virtual server settings for improved network performance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-configuring-network-performance).
 
 ## Memory 
 {: #memory}
@@ -97,7 +97,7 @@ The offering is available in the following profiles:
 
 All supported operating systems (such as CentOS, Debian, Red Hat Enterprise Linux, Ubuntu, and Windows) are available with this offering. For more information about storage, see [Storage notes for profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#storage-notes-for-profiles). 
 
-If you select a profile that has a network performance cap that is higher than 5 Gbps, you must enable Jumbo Frames in the networking configuration of your virtual server instance. For more information, see [Configuring network performance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-configuring-network-performance).
+If you select a profile that has a network performance cap that is higher than 5 Gbps, you must enable Jumbo Frames in the networking configuration of your virtual server instance to achieve the higher network throughput. For more information, see [Configuring virtual server settings for improved network performance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-configuring-network-performance).
 
 ## Storage notes for profiles
 {: #storage-notes-for-profiles}
@@ -132,3 +132,4 @@ When you use the command line, the following information describes what the outp
 *  "b" is balanced, which is a 1:4 ratio
 *  "c" is compute (higher on the CPUs), which is a 1:2 ratio
 *  “m” is memory (higher on the memory), which is a 1:8 ratio
+
