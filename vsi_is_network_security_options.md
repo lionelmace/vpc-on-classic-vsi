@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-09-12"
+lastupdated: "2019-09-16"
 
 keywords: virtual network interface card, vNIC, virtual private cloud, virtual server, instance, security, multiple IP addresses, security group, ACL, access control list
 
@@ -37,7 +37,7 @@ A virtual network interface card (vNIC) is used to connect a virtual server to a
 * You can change the name of any existing vNIC.
 
 The profile that is selected when an instance is created determines the network performance cap for the instance, 1 - 16 Gbps. Bandwidth is distributed across the vNICs that are attached to the virtual server instance. For more information, see 
-[Configuring network performance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-configuring-network-performance).
+[Configuring virtual server settings for improved network performance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-configuring-network-performance).
 
 ## Networking options
 {: #networking-options}
@@ -53,3 +53,4 @@ For more information about overall networking features in the {{site.data.keywor
 * SSH keys on your virtual server instance authenticate a secure channel for network communication.
 
 For more information about these security options, see [Security in your IBM Cloud VPC](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-security-in-your-ibm-cloud-vpc) and [Managing SSH keys](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-managing-ssh-keys#managing-ssh-keys).
+
