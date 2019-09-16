@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-12"
+lastupdated: "2019-09-16"
 
 keywords: network performance, configuring jumbo frames, 
 
@@ -19,7 +19,7 @@ subcollection: vpc-on-classic-vsi
 {:tip: .tip}
 {:important: .important}
 
-# Configuring network performance
+# Configuring virtual server settings for improved network performance
 {: #configuring-network-performance}
 
 The network performance cap for your virtual server is determined by the profile that you select when you create the virtual 
@@ -40,6 +40,8 @@ information about the network performance cap for profiles, see [Profiles](/docs
 
 When you select a profile that has a network performance cap that is higher than 5 Gbps, you must enable Jumbo Frames in the networking configuration of your virtual server instance. Changing the network configuration of your virtual server instance ensures that you can achieve network throughput at speeds greater than 5 Gbps.  
 {:important}
+
+In addition to configuring jumbo frames, you can also use multiple TCP connections to help achieve higher network performance on your workloads. Support for multiple TCP connections is application-dependent, so you can refer to your application documentation to determine whether you can use multiple TCP connections.
 
 If you select a profile that indicates network performance greater than 5 Gbps, complete the following steps for your 
 operating system to enable Jumbo Frames. 
