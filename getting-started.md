@@ -36,7 +36,7 @@ Bet you're anxious to start, so let's get to work creating a Linux instance from
 Are you new to {{site.data.keyword.cloud_notm}} and {{site.data.keyword.vsi_is_short}}? The following information might help:
 
 * Make sure that you sign up for an {{site.data.keyword.cloud_notm}} account. For more information, see [Signing up for {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/docs/account?topic=account-signup#signup){: external}.
-* {{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the classic virtual server offerings, see [IBM Cloud Virtual Servers](/docs/vsi?topic=virtual-servers-getting-started-tutorial).
+* {{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the classic virtual server offerings, see [IBM Cloud Virtual Servers](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers).
 
 Before you begin, make sure that you [created an IBM Cloud VPC](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started) on Classic.
 {:important}
