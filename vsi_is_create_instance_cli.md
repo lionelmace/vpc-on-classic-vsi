@@ -100,7 +100,7 @@ Use the following commands to determine the required information for creating a 
    ```
    {:screen}
 
-   If you do not have an {{site.data.keyword.vpc_short} available, you can create one by using the `ibmcloud is vpc-create` command. For more information about creating an {{site.data.keyword.vpc_short}}, see [IBM Cloud VPC CLI Reference](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference#vpc-create).
+   If you do not have an {{site.data.keyword.vpc_short}} available, you can create one by using the `ibmcloud is vpc-create` command. For more information about creating an {{site.data.keyword.vpc_short}}, see [IBM Cloud VPC CLI Reference](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference#vpc-create).
 
 4. List the subnets that are associated with the {{site.data.keyword.vpc_short}}.
    ```
