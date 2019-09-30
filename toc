@@ -55,7 +55,7 @@ IBM Cloud Virtual Servers for VPC on Classic
 
     {: .navgroup id="reference"}
     [API reference for VPC](https://console.cloud.ibm.com/apidocs/vpc-on-classic)
-    [Compute CLI reference for VPC](/vpc-infrastructure-cli-plugin/vpc-infrastructure-cli-plugin-vpc-reference#compute)
+    [Compute CLI reference for VPC](/vpc-on-classic/vpc-on-classic-vpc-reference#compute)
     {: .navgroup-end}
 
     {: .navgroup id="help"}
