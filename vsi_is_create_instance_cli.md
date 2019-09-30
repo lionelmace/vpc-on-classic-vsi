@@ -33,7 +33,7 @@ You can create {{site.data.keyword.vsi_is_full}} instances by using the command 
     * {{site.data.keyword.cloud_notm}} CLI
     * The vpc-infrastructure plug-in
 
-   For more information, see [IBM Cloud CLI for VPC Reference](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference).
+   For more information, see [IBM Cloud CLI for VPC Reference](/docs/vpc-on-classic?topic=vpc-on-classic-vpc-reference).
    
    When you install the vpc-infrastructure plug-in for the first time, you must set the target generation to gen 1, `ibmcloud is target --gen 1`.
    {:important}
@@ -100,7 +100,7 @@ Use the following commands to determine the required information for creating a 
    ```
    {:screen}
 
-   If you do not have an {{site.data.keyword.vpc_short}} available, you can create one by using the `ibmcloud is vpc-create` command. For more information about creating an {{site.data.keyword.vpc_short}}, see [IBM Cloud VPC CLI Reference](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference#vpc-create).
+   If you do not have an {{site.data.keyword.vpc_short}} available, you can create one by using the `ibmcloud is vpc-create` command. For more information about creating an {{site.data.keyword.vpc_short}}, see [IBM Cloud VPC CLI Reference](/docs/vpc-on-classic?topic=vpc-on-classic-vpc-reference#vpc-create).
 
 4. List the subnets that are associated with the {{site.data.keyword.vpc_short}}.
    ```
@@ -117,7 +117,7 @@ Use the following commands to determine the required information for creating a 
    ```
    {:screen}
 
-   If you do not have a subnet available, you can create one by using the `ibmcloud is subnet-create` command. For more information about creating a subnet, see [IBM Cloud VPC CLI Reference](/docs/vpc-infrastructure-cli-plugin?topic=vpc-infrastructure-cli-plugin-vpc-reference#subnets).
+   If you do not have a subnet available, you can create one by using the `ibmcloud is subnet-create` command. For more information about creating a subnet, see [IBM Cloud VPC CLI Reference](/docs/vpc-on-classic?topic=vpc-on-classic-vpc-reference#subnets).
 
 5. List the available profiles for creating your instance.
    ```
