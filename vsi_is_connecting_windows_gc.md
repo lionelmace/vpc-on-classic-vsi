@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-06"
+lastupdated: "2019-10-09"
 
 keywords: Windows instance, encrypt password, decrypt password, retrieve password
 
@@ -19,6 +19,7 @@ subcollection: vpc-on-classic-vsi
 {:note: .note}
 {:important: .important}
 {:table: .aria-labeledby="caption"}
+{:external: target="_blank" .external}
 
 # Connecting to your Windows instance
 {: #connecting-to-your-windows-instance}
@@ -31,10 +32,19 @@ After you have created your {{site.data.keyword.vsi_is_full}} Windows instance, 
 
 Make sure to complete the following prerequisites before you begin:
 
-1. Ask your account administrator to grant you access to retrieve the password from your virtual server instance. For more information, review [user permissions](/docs/vpc-on-classic?topic=vpc-on-classic-managing-user-permissions-for-vpc-resources).
-2. Create a new security group or add a rule to the default security group to enable inbound access for the Remote Desktop default port, 3389. For more information, see [Using security groups](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-using-security-groups).
-3. Ensure that inbound traffic over TCP/IP port 3389 is permitted on the VPC's default ACL. For more information, see [Setting up Network ACLs](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-setting-up-network-acls).
-4. Verify that you have OpenSSL installed. To successfully decrypt your password, you must run OpenSSL and not LibreSSL. For more information, see [OpenSSL Downloads ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.openssl.org/source/){: new_window}.
+1. Ensure that you downloaded, installed, and initialized the following CLI plug-ins:
+    * {{site.data.keyword.cloud_notm}} CLI
+    * The vpc-infrastructure plug-in
+
+   For more information, see [IBM Cloud CLI for VPC Reference](/docs/vpc-on-classic?topic=vpc-on-classic-vpc-reference).
+   
+   When you install the vpc-infrastructure plug-in for the first time, you must set the target generation to gen 1, `ibmcloud is target --gen 1`.
+   {:important}
+   
+2. Ask your account administrator to grant you access to retrieve the password from your virtual server instance. For more information, review [user permissions](/docs/vpc-on-classic?topic=vpc-on-classic-managing-user-permissions-for-vpc-resources).
+3. Create a new security group or add a rule to the default security group to enable inbound access for the Remote Desktop default port, 3389. For more information, see [Using security groups](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-using-security-groups).
+4. Ensure that inbound traffic over TCP/IP port 3389 is permitted on the VPC's default ACL. For more information, see [Setting up Network ACLs](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-setting-up-network-acls).
+5. Verify that you have OpenSSL installed. To successfully decrypt your password, you must run OpenSSL and not LibreSSL. For more information, see [OpenSSL Downloads ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.openssl.org/source/){: new_window}.
 
 LibreSSL isn't compatible for the decryption of your password. You must run OpenSSL to decrypt your password.
 {:important}
@@ -85,6 +95,9 @@ After you create your Windows instance and complete the prerequisites, complete 
   {:codeblock}
 
 5. You now have what you need in order to connect to your Windows instance: decrypted password and floating IP address. Use your preferred Remote Desktop client to connect to your instance. To connect to your instance, provide the floating IP address and the decrypted password. The username is `Administrator` by default.
+
+In [{{site.data.keyword.cloud_notm}} console](https://console.cloud.ibm.com/vpc){: external} on the **Instance Details** page of your virtual server instance, you can click **Download RDP file** to get a file with connection values pre-filled. You must add your decrypted password to connect. 
+{: tip}
 
 ## Next steps
 {: #next-manage-instances}
