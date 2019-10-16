@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-08-08"
+lastupdated: "2019-09-18"
 
 keywords: import custom image, custom image, deploy custom image, use custom image for virtual server, create custom image, custom Windows image, custom Linux image, provision instance with custom image
 
@@ -31,16 +31,31 @@ You can import your own custom image to the {{site.data.keyword.vpc_short}} infr
 ## Before you begin
 {: #prereq-custom-images}
 
-To import a custom image to {{site.data.keyword.vpc_full}}, you must have an instance of {{site.data.keyword.cos_full_notm}} available. You must also create a bucket in {{site.data.keyword.cos_full_notm}} to store your images. 
+To import a custom image to {{site.data.keyword.vpc_full}}, you must have an instance of {{site.data.keyword.cos_full_notm}} available. You must also create a bucket in {{site.data.keyword.cos_full_notm}} to store your images. Finally, you must create an authorization so that the Image Service for VPC can access images in {{site.data.keyword.cos_full_notm}}.
 
-Make sure that your image meets custom image [requirements](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-images#custom-images).
+Make sure that your image meets custom image [requirements](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-images#custom-images). For more information, see [Creating a custom image](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-managing-images#create-deployable-custom-image).
 {: important}
+
+### Creating an {{site.data.keyword.cos_full_notm}} service instance
+{: #prereq-icos-instance}
 
 1. If you need to create an instance of {{site.data.keyword.cos_full_notm}}, see [Getting started with {{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started).
 2. If you need to upload an image to {{site.data.keyword.cos_full_notm}}, navigate to your bucket and click **Add Objects** to 
 [upload](/docs/services/cloud-object-storage?topic=cloud-object-storage-upload) the image. You can use the Aspera 
 high-speed transfer plug-in to upload images larger than 200 MB.
-3. From IBM {{site.data.keyword.iamshort}} (IAM), [create an authorization](/docs/iam?topic=iam-serviceauth#serviceauth) between **VPC Infrastructure** (source service) > **Image Service for VPC** (resource type) and **Cloud Object Storage** (target service).
+
+### Granting access between services
+{: #prereq-create-service-authorization}
+
+From IBM {{site.data.keyword.iamshort}} you must create an authorization so that the Image Service for VPC can access images in {{site.data.keyword.cos_full_notm}}. 
+
+1. From the [{{site.data.keyword.cloud_notm}} console](https://console.cloud.ibm.com/vpc){: external} menu bar, click **Manage** &gt; **Access (IAM)**, and select **Authorizations**.
+2. Click **Create**.
+3. Select a source and target service for the authorization. Specify **VPC Infrastructure**  as the source service. Specify **Image Service for VPC** as the resource type. Specify **Cloud Object Storage**  as the target service.
+4. Select a role to assign access to the source service that accesses the target service.
+5. Click **Authorize**.
+
+For more information, see [Using authorizations to grant access between services](/docs/iam?topic=iam-serviceauth#serviceauth).
 
 ## Creating a custom image 
 {: #create-deployable-custom-image}
