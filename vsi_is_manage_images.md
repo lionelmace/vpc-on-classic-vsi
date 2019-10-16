@@ -25,7 +25,7 @@ subcollection: vpc-on-classic-vsi
 # Importing and managing images
 {: #managing-images}
 
-You can import your own custom image to the {{site.data.keyword.vpc_short}} infrastructure. Then, you can use your custom image to create new virtual server instances.
+You can import your own custom image to the {{site.data.keyword.vpc_short}} infrastructure. Then, you can use your custom image to create new generation 1 virtual server instances.
 {:shortdesc}
 
 ## Before you begin
@@ -60,7 +60,7 @@ For more information, see [Using authorizations to grant access between services
 ## Creating a custom image 
 {: #create-deployable-custom-image}
 
-You can create your own custom image, either a Linux-based custom image or a Windows custom image, to deploy a virtual server instance in the {{site.data.keyword.vpc_short}} infrastructure. Another option is to use an image template from the classic infrastructure to export to {{site.data.keyword.cos_full_notm}}. Then, you can import the image template as a custom image to the {{site.data.keyword.vpc_short}} infrastructure. 
+You can create your own custom image, either a Linux-based custom image or a Windows custom image, to deploy a generation 1 virtual server instance in the {{site.data.keyword.vpc_short}} infrastructure. Another option is to use an image template from the classic infrastructure to export to {{site.data.keyword.cos_full_notm}}. Then, you can import the image template as a custom image to the {{site.data.keyword.vpc_short}} infrastructure. 
 
 To use a custom image from the classic infrastructure that can be deployed in the {{site.data.keyword.vpc_short}} infrastructure, see [Migrating a virtual server instance from the classic infrastructure](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-migrate-vsi-from-classic-infra-to-vpc-on-classic). 
 {:tip}
