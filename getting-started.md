@@ -2,9 +2,9 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-23"
+lastupdated: "2019-10-16"
 
-keywords: "virtual servers, {{site.data.keyword.vsi_is_short}}, getting started, virtual private cloud, virtual machines, compute, instance"
+keywords: "virtual servers, {{site.data.keyword.vsi_is_short}}, getting started, virtual private cloud, virtual machines, compute, instance, generation 1"
 
 subcollection: vpc-on-classic-vsi
 
@@ -18,13 +18,19 @@ subcollection: vpc-on-classic-vsi
 {:table: .aria-labeledby="caption"}
 {:important: .important}
 {:note: .note}
+{:tip: .tip}
 {:external: target="_blank" .external}
 
 # Getting started with Virtual Servers for VPC
 {: #getting-started}
 
-Use {{site.data.keyword.vsi_is_full}} (VPC) on Classic to create compute instances in the {{site.data.keyword.cloud_notm}}.
+Use {{site.data.keyword.vsi_is_full}} (VPC) to create first-generation compute instances in the {{site.data.keyword.cloud_notm}}. Generation 1 instances were introduced with the release of IBM Cloud VPC and offer a broad selection of general-purpose profiles that are available in all VPC regions. Within the console, the generation is depicted using the following image.
 {:shortdesc}
+
+![Generation 1 compute banner](images/vsi.png "Image of the generation 1 compute banner"){: caption="Figure 1. This is the banner that appears when you are creating generation 1 compute resources in the console." caption-side="bottom"}
+
+New! Check out generation 2 virtual server profiles. For more information, see [Planning for instances](/docs/vpc?topic=vpc-vsi_best_practices).
+{:tip}
 
 You can create virtual server instances on demand, configure network and security, and manage storage. All of these features are available in an improved {{site.data.keyword.cloud_notm}} console. The console is built to provide you with quick and easy access to adjust your environment with your changing workload demands. 
 
@@ -36,9 +42,9 @@ Bet you're anxious to start, so let's get to work creating a Linux instance from
 Are you new to {{site.data.keyword.cloud_notm}} and {{site.data.keyword.vsi_is_short}}? The following information might help:
 
 * Make sure that you sign up for an {{site.data.keyword.cloud_notm}} account. For more information, see [Signing up for {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/docs/account?topic=account-signup#signup){: external}.
-* {{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the classic virtual server offerings, see [IBM Cloud Virtual Servers](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers).
+* Be aware that generation 1 virtual server instances are not compatible with generation 2 virtual server instances or the classic virtual server offerings. For information about differences between generations of compute, see [Comparing compute generations in VPC](/docs/overview?topic=overview-compare-vpc-vpcoc). For information about the classic virtual server offerings, see [IBM Cloud Virtual Servers](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers).
 
-Before you begin, make sure that you [created an IBM Cloud VPC](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started) on Classic.
+Before you begin, make sure that you have a [virtual private cloud](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started)  created.
 {:important}
 
 ## Step 1. Log in to your {{site.data.keyword.cloud_notm}} account
