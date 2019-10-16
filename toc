@@ -3,19 +3,37 @@
 {:external: target="_blank" .external}
 
 {: .toc subcollection="vpc-on-classic-vsi" category="vpc,compute" audience="compute" arm="407" href="/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-getting-started" path="vpc-on-classic-vsi"}
-IBM Cloud Virtual Servers for VPC on Classic
+IBM Cloud Virtual Servers for VPC (Gen 1)
 
     {: .navgroup id="learn"}
+    {: .topicgroup}
     getting-started.md
     [Learn about IBM Cloud Virtual Private Cloud](https://www.ibm.com/cloud/vpc){: external}
     vsi_is_about_vpc.md
     vsi_best_practices.md
+    /vpc-on-classic/vpc-on-classic-quotas
     vsi_is_images.md
     vsi_is_profiles.md
     vsi_is_ssh_keys_about.md
     vsi_is_provisioning_scripts.md
     vsi_is_network_security_options.md
+    
+    {: .topicgroup}
+    VPC networking and security
+        /vpc-on-classic-network/vpc-on-classic-network-about-networking-for-vpc
+        /vpc-on-classic-network/vpc-on-classic-network-working-with-ip-address-ranges-address-prefixes-regions-and-subnets
+        /vpc-on-classic-network/vpc-on-classic-network-security-in-your-ibm-cloud-vpc
+    
     vsi_is_storage.md
+    
+    {: .topicgroup}
+    Related Links
+        [Virtual Private Cloud](/vpc-on-classic/vpc-on-classic-getting-started)
+        [Networking for VPC](/vpc-on-classic-network/vpc-on-classic-network-getting-started)
+        [Storage for VPC](/vpc-on-classic-block-storage/vpc-on-classic-block-storage-getting-started)
+        [Load Balancer for VPC](/vpc-on-classic-network/vpc-on-classic-network---using-load-balancers-in-ibm-cloud-vpc)
+        [VPN for VPC](/vpc-on-classic-network/vpc-on-classic-network---using-vpn-with-your-vpc)
+        [Architecture Center VPC Solutions](https://www.ibm.com/cloud/garage/architectures/virtual-private-cloud-subdomain)
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
@@ -33,6 +51,7 @@ IBM Cloud Virtual Servers for VPC on Classic
 
     {: .topicgroup}
     Managing
+        /vpc-on-classic/vpc-on-classic-managing-user-permissions-for-vpc-resources
         vsi_is_manage_instances.md
         vsi_is_manage_instances_cli.md
         vsi_is_ssh_keys.md
