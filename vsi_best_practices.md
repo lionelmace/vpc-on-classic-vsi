@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-08-23"
+lastupdated: "2019-10-16"
 
 keywords: IBM Cloud Virtual Private Cloud, popular profile options, necessary resources, planning, virtual servers
 
@@ -24,7 +24,7 @@ subcollection: vpc-on-classic-vsi
 [comment]: # (linked help topic)
 
 
-When you're planning to provision {{site.data.keyword.vsi_is_full}}, you might find this configuration checklist helpful to get the most out of your virtual server deployment.
+When you're planning to provision {{site.data.keyword.vsi_is_full}}, you might find this configuration checklist helpful to get the most out of your generation 1 virtual server deployment.
 {:shortdesc}
 
 Before you get started, make sure that you [created an {{site.data.keyword.vpc_short}}](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started).
@@ -33,7 +33,7 @@ Before you get started, make sure that you [created an {{site.data.keyword.vpc_s
 ## Planning for provisioning instances
 {: #planning-for-provisioning-instances}
 
-After you have an {{site.data.keyword.vpc_short}} available, use the following information to start planning, creating, and connecting to your instances.
+After you have an {{site.data.keyword.vpc_short}} available, use the following information to start planning, creating, and connecting to your generation 1 instances.
 
 <table>
    <CAPTION>Table 1. Quick start steps</CAPTION>
@@ -51,7 +51,7 @@ After you have an {{site.data.keyword.vpc_short}} available, use the following i
    </tr>
    <tr>
    <td>2. Verify that your account has the required user permissions.</td>
-   <td>For more information, see <a href="/docs/vpc-on-classic?topic=vpc-on-classic-about-vpc-infrastructure-resources#planning-virtual-servers-for-vpc-permissions">user permissions</a>. If you have authorization as an editor or admin on an IBM Cloud VPC resource, then you also inherit authorization to create, delete, and modify virtual server instances within that virtual private cloud.</td>
+   <td>For more information, see <a href="/docs/vpc-on-classic-vsi?topic=vpc-on-classic-managing-user-permissions-for-vpc-resources">Giving user permissions to manage VPC resources</a>. If you have the administrator role, you can assign roles that determine which users can create and manage virtual server instances within the virtual private cloud.</td>
    </tr>
    <tr>
    <td>3. Determine your workload specifications.</td>
