@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-09-16"
+lastupdated: "2019-10-15"
 
 keywords: profile, virtual private cloud, virtual server, instance, balanced, compute, memory
 
@@ -22,7 +22,7 @@ subcollection: vpc-on-classic-vsi
 # Profiles
 {: #profiles}
 
-When you provision {{site.data.keyword.vsi_is_full}}, you can select from three families of profiles: Balanced, Compute, and Memory. A profile is a combination of vCPU and RAM that can be instantiated quickly to start a virtual server instance. In the {{site.data.keyword.Bluemix_notm}} console, you can choose from popular profile configurations or select from a list of profiles that best fit your needs.
+When you provision {{site.data.keyword.vsi_is_full}}, you can select from three families of profiles for generation 1 instances: Balanced, Compute, and Memory. A profile is a combination of vCPU and RAM that can be instantiated quickly to start a virtual server instance. In the {{site.data.keyword.Bluemix_notm}} console, you can choose from popular profile configurations or select from a list of profiles that best fit your needs.
 {: shortdesc}
 
 The following families are available:
@@ -132,4 +132,3 @@ When you use the command line, the following information describes what the outp
 *  "b" is balanced, which is a 1:4 ratio
 *  "c" is compute (higher on the CPUs), which is a 1:2 ratio
 *  “m” is memory (higher on the memory), which is a 1:8 ratio
-
