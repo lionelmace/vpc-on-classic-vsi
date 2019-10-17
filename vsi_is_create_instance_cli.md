@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-06-04"
+lastupdated: "2019-10-15"
 
 keywords: virtual server instances, virtual private cloud, create virtual server, provision virtual server, virtual machine, instance, virtual server, deploy virtual server, CLI, command line interface
 
@@ -23,7 +23,7 @@ subcollection: vpc-on-classic-vsi
 # Creating virtual server instances (CLI)
 {: #creating-virtual-servers-cli}
 
-You can create {{site.data.keyword.vsi_is_full}} instances by using the command line interface (CLI).
+You can create {{site.data.keyword.vsi_is_full}} instances by using the command line interface (CLI). Use this information when you're creating generation 1 virtual server instances.
 {:shortdesc}
 
 ## Before you begin
