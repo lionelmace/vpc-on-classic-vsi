@@ -94,7 +94,7 @@ After you create your Windows instance and complete the prerequisites, complete 
   ```
   {:codeblock}
 
-5. You now have what you need in order to connect to your Windows instance: decrypted password and floating IP address. Use your preferred Remote Desktop client to connect to your instance. To connect to your instance, provide the floating IP address and the decrypted password. The username is `Administrator` by default.
+5. You now have what you need in order to connect to your Windows instance: decrypted password and floating IP address. Use your preferred Remote Desktop client to connect to your instance. To connect to your instance, provide the floating IP address and the decrypted password. The username is `Administrator` by default. (If you are connecting from a client that is running the Windows Administrator account, use `.\Administrator` as the user ID to log on to RDP.)
 
 In [{{site.data.keyword.cloud_notm}} console](https://console.cloud.ibm.com/vpc){: external} on the **Instance Details** page of your virtual server instance, you can click **Download RDP file** to get a file with connection values pre-filled. You must add your decrypted password to connect. 
 {: tip}
