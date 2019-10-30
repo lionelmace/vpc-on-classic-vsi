@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019
-lastupdated: "2019-09-18"
+lastupdated: "2019-10-30"
 
 keywords: import custom image, custom image, deploy custom image, use custom image for virtual server, create custom image, custom Windows image, custom Linux image, provision instance with custom image
 
@@ -41,7 +41,7 @@ Make sure that your image meets custom image [requirements](/docs/vpc-on-classic
 
 1. If you need to create an instance of {{site.data.keyword.cos_full_notm}}, see [Getting started with {{site.data.keyword.cos_full_notm}}](/docs/services/cloud-object-storage?topic=cloud-object-storage-getting-started).
 2. If you need to upload an image to {{site.data.keyword.cos_full_notm}}, navigate to your bucket and click **Add Objects** to 
-[upload](/docs/services/cloud-object-storage?topic=cloud-object-storage-upload) the image. You can use the Aspera 
+[upload](/docs/services/cloud-object-storage?topic=cloud-object-storage-upload) the image. The bucket must be in the same region where you plan to import your image and create new instances. You can use the Aspera 
 high-speed transfer plug-in to upload images larger than 200 MB.
 
 ### Granting access between services
@@ -155,6 +155,9 @@ environment by using the [Config Drive](http://cloudinit.readthedocs.io/en/lates
 When you import a custom image, it's private to the account where you import it. Also, the region where you choose to import the image is the region where you can create virtual server instances from that image.  
 
 When you have an image available in {{site.data.keyword.cos_full_notm}}, you can import it to {{site.data.keyword.vpc_short}} infrastructure by using the {{site.data.keyword.cloud_notm}} console.
+
+When you import an image, the region where your {{site.data.keyword.cos_full_notm}} bucket is created and where your custom image is stored must be the same as the region where you are importing an image and creating new instances.
+{: tip}
 
 1. Make sure that your compatible custom image is available in {{site.data.keyword.cos_full_notm}}. For more information, see [Creating a custom image](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-managing-images#create-deployable-custom-image) and [Uploading data](/docs/services/cloud-object-storage?topic=cloud-object-storage-upload) to {{site.data.keyword.cos_full_notm}}.
 2. In [{{site.data.keyword.cloud_notm}} console](https://console.cloud.ibm.com/vpc){: external}, 
