@@ -50,13 +50,13 @@ You can add and delete SSH keys by using the {{site.data.keyword.cloud_notm}} co
     You are shown a list of the available regions for your specific resource group.
     {: note}
   
-4. Locate your SSH key by looking for a file called id_rsa.pub under an .ssh directory under your home directory, for example, `/Users/<USERNAME>/.ssh/id_rsa.pub`. For more information, see [Locating or generating your SSH key](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-ssh-keys#locating-or-generating-your-ssh-key).
+4. Locate your SSH key by looking for a file called id_rsa.pub. It might be in an .ssh directory within your home directory, for example, `/Users/<USERNAME>/.ssh/id_rsa.pub`. For more information, see [Locating or generating your SSH key](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-ssh-keys#locating-or-generating-your-ssh-key).
   
     The directory might contain two files with the same file name. The "public" SSH key, contains the extension `.pub`. The content of the public SSH key file typically begins with `ssh-rsa` and ends with your user name.
     {: tip}
   
- 5. You can open the id_rsa.pub file with a text editor. Then, copy and paste the entire contents of the SSH file into the **Public key** space on the form.
- 6. Click **Add SSH key** to create the your SSH key in the IBM Cloud console. It now displas in **VPC Infrastructure > Compute > SSH keys**.
+5. You can open the id_rsa.pub file with a text editor. Then, copy and paste the entire contents of the SSH file into the **Public key** space on the form.
+6. Click **Add SSH key** to create the your SSH key in the IBM Cloud console. It now displas in **VPC Infrastructure > Compute > SSH keys**.
 
 ## Managing SSH keys by using the CLI
 {: #managing-ssh-keys-by-using-the-cli}
