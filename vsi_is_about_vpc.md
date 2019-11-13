@@ -38,16 +38,16 @@ With {{site.data.keyword.vsi_is_short}}, you can create an instance that consist
 
 In today's IBM Cloud Virtual Server offering, instances use native subnet and VLAN networking to communicate to each other within a data center (and single pod). Using subnet and VLAN networking in one pod works well until you must scale up or have large virtual resource demands that require resources to be created between pods. (Adding appliances for VLAN spanning can get expensive and complicated!) 
 
-{{site.data.keyword.vpc_short}} adds a network orchestration layer that eliminates the pod boundary, creating infinite capacity for scaling instances. The network orchestration layer handles all of the networking for all virtual server instances that are within an {{site.data.keyword.vpc_short}} across regions and zones. With the software defined networking capabilities that {{site.data.keyword.vpc_short}} provides, you have more options for [VPNs](/docs/vpc-on-classic-network?topic=vpc-on-classic-network---using-vpn-with-your-vpc), [LBaaS](/docs/vpc-on-classic-network?topic=vpc-on-classic-network---using-load-balancers-in-ibm-cloud-vpc), multi-vNIC instances, and larger [subnet](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-working-with-ip-address-ranges-address-prefixes-regions-and-subnets#ibm-cloud-vpc-and-subnets) sizes. For more information, see [About Networking for VPC](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-about-networking-for-vpc). 
+{{site.data.keyword.vpc_short}} adds a network orchestration layer that eliminates the pod boundary, creating infinite capacity for scaling instances. The network orchestration layer handles all of the networking for all virtual server instances that are within an {{site.data.keyword.vpc_short}} across regions and zones. With the software defined networking capabilities that {{site.data.keyword.vpc_short}} provides, you have more options for [VPNs](/docs/vpc-on-classic-network?topic=vpc-on-classic-network---using-vpn-with-your-vpc), [LBaaS](/docs/vpc-on-classic-network?topic=vpc-on-classic-network---using-load-balancers-in-ibm-cloud-vpc), multi-vNIC instances, and larger [subnet](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-
+working-with-ip-address-ranges-address-prefixes-regions-and-subnets#ibm-cloud-vpc-and-subnets) sizes. For more information, see [About Networking for VPC](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-about-networking-for-vpc). 
 
 {{site.data.keyword.vsi_is_short}} also have the following features that provide a simpler user experience and cost savings:
 * New {{site.data.keyword.cloud_notm}} console
 * New Virtual Private Cloud API and CLI
-* New billing model with sustained usage discount tiers, as described in [Pricing](/docs/vpc-on-classic?topic=vpc-on-classic-pricing-for-virtual-servers-for-vpc)
+* New billing model with sustained usage discount tiers, as described in [Pricing](/docs/vpc-on-classic?topic=vpc-on-classic-pricing-for-vpc#sustained-usage)
 
-{{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the  {{site.data.keyword.cloud_notm}} {{site.data.keyword.BluVirtServers_short}} offerings on the classic infrastructure, see [IBM Cloud Virtual Servers](/docs/vsi?topic=virtual-servers-getting-started-tutorial#getting-started-tutorial).
+{{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the  {{site.data.keyword.cloud_notm}} {{site.data.keyword.BluVirtServers_short}} offerings on the classic infrastructure, see [IBM Cloud Virtual Servers](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers).
 {:note}
-
 
 
 
