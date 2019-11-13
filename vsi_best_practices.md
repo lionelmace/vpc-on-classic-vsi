@@ -46,7 +46,7 @@ After you have an {{site.data.keyword.vpc_short}} available, use the following i
    <TBODY>
    <tr>
    <td>1. Log in to your IBM Cloud account.</td>
-   <td>Access the {{site.data.keyword.vsi_is_short}} Order Form from the <a href="https://console.bluemix.net/catalog/">IBM Cloud catalog</a>. You need an <a href="docs/account?topic=account-signup">IBMid and password</a>.
+   <td>Access the {{site.data.keyword.vsi_is_short}} Order Form from the <a href="https://cloud.ibm.com/catalog">IBM Cloud catalog</a>. You need an <a href="/docs/account?topic=account-signup">IBMid and password</a>.
    </td>
    </tr>
    <tr>
