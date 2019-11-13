@@ -42,7 +42,7 @@ Bet you're anxious to start, so let's get to work creating a Linux instance from
 Are you new to {{site.data.keyword.cloud_notm}} and {{site.data.keyword.vsi_is_short}}? The following information might help:
 
 * Make sure that you sign up for an {{site.data.keyword.cloud_notm}} account. For more information, see [Signing up for {{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/docs/account?topic=account-signup#signup){: external}.
-* Be aware that generation 1 virtual server instances are not compatible with generation 2 virtual server instances or the classic virtual server offerings. For information about differences between generations of compute, see [Comparing compute generations in VPC](/docs/overview?topic=overview-compare-vpc-vpcoc). For information about the classic virtual server offerings, see [IBM Cloud Virtual Servers](/docs/vsi?topic=virtual-servers-getting-started-with-virtual-servers).
+* Be aware that generation 1 virtual server instances are not compatible with generation 2 virtual server instances or the classic virtual server offerings. For information about differences between generations of compute, see [Comparing compute generations in VPC](/docs/overview?topic=overview-compare-vpc-vpcoc). For information about the classic virtual server offerings, see [IBM Cloud Virtual Servers](/docs/vsi?topic=virtual-servers-getting-started-tutorial).
 
 Before you begin, make sure that you have a [virtual private cloud](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started)  created.
 {:important}
@@ -56,7 +56,7 @@ Access the {{site.data.keyword.vsi_is_short}} Order Form from the [{{site.data.k
 {: #vsi-for-vpc-generate-ssh-key-gs}
 
 1. Run the `ssh-keygen` command and follow the prompts. The command generates two files. The generated public key is in the `<your key>.pub` file.
-2. After you generate an SSH key, you must add the key in {{site.data.keyword.cloud_notm}} console. In [{{site.data.keyword.cloud_notm}} console](https://console.cloud.ibm.com/vpc){: external}, navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > SSH keys**. Then, click **Add SSH key** and complete the required information.
+2. After you generate an SSH key, you must add the key in {{site.data.keyword.cloud_notm}} console. In [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com/vpc){: external}, navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > SSH keys**. Then, click **Add SSH key** and complete the required information.
 
 ## Step 3. Create a {{site.data.keyword.vsi_is_short}} instance
 {: #vsi-for-vpc-create-instance-gs}
