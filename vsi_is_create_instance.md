@@ -56,6 +56,12 @@ To create an instance, select the following instance details.
     <td>Locations are composed of regions (specific geographic areas) and zones (fault tolerant data centers within a region). Select the location where you want your virtual server instance to be created.</td>
     </tr>
     <tr>
+    <td>Image</td>
+    <td><p>All images are cloud-init enabled. With cloud-init enabled images, you can associate user metadata with the instance through post provisioning scripts.</p>
+    <p>For more information, see [Images](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-images#images).</p>
+    </td>
+    </tr>
+    <tr>
     <td>Profile</td>
     <td><p>
     Select from popular profiles or all available vCPU and RAM combinations. The following families are supported:
@@ -87,12 +93,6 @@ To create an instance, select the following instance details.
     <tr>
     <td>Boot volume</td>
     <td><p>The default boot volume size for all profiles is 100 GB. By default the boot volume includes provider-managed encryption. If you want to use customer-managed encryption, you can edit the details of the boot volume. For more information, see [Storage](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-storage#storage).</p>
-    </td>
-    </tr>
-    <tr>
-    <td>Image</td>
-    <td><p>All images are cloud-init enabled. With cloud-init enabled images, you can associate user metadata with the instance through post provisioning scripts.</p>
-    <p>For more information, see [Images](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-images#images).</p>
     </td>
     </tr>
     <tr>
