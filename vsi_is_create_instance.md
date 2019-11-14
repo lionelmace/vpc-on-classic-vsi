@@ -107,7 +107,7 @@ To create an instance, select the following instance details.
     </TBODY>
     </table>
 
-    Your *Cost summary* displays on the right side of the *New virtual server instance* page.
+    Your *Order summary* displays estimated monthly cost on the right side of the *New virtual server instance* page.
 
 3. Click **Create virtual server instance** when you are ready to provision. A series of emails is sent to your administrator: acknowledgment of the virtual server instance order, order approval and processing, and a message that states the instance is created.
 
