@@ -71,7 +71,7 @@ To create an instance, select the following instance details.
     <li>Memory</li>
     </ul>
     </p>
-    <p>Each physical core on the server is hyper-threaded and presented as two virtual CPUs (vCPUs). The virtual server offering provides 2.0 GHz or better per vCPU with up to 48 vCPU available on a single virtual server.</p>
+    <p>Each physical core on the server is hyper-threaded and presented as two virtual CPUs (vCPUs). The virtual server offering provides 2.0 GHz or better per vCPU with up to 62 vCPU available on a single virtual server.</p>
 
     <p>For memory, an instance can have up to 256 GB of fully dedicated RAM.</p>
     <p><note>Note: Maximum values vary by family.</note></p>
