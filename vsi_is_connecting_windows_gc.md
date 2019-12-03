@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019
-lastupdated: "2019-10-09"
+lastupdated: "2019-12-03"
 
 keywords: Windows instance, encrypt password, decrypt password, retrieve password
 
@@ -46,7 +46,7 @@ Make sure to complete the following prerequisites before you begin:
 4. Ensure that inbound traffic over TCP/IP port 3389 is permitted on the VPC's default ACL. For more information, see [Setting up Network ACLs](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-setting-up-network-acls).
 5. Verify that you have OpenSSL installed. To successfully decrypt your password, you must run OpenSSL and not LibreSSL. For more information, see [OpenSSL Downloads ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.openssl.org/source/){: new_window}.
 
-LibreSSL isn't compatible for the decryption of your password. You must run OpenSSL to decrypt your password.
+LibreSSL isn't compatible for the decryption of your password. You must run OpenSSL to decrypt your password. Make sure that you have OpenSSL in your path. For example, `export PATH=“/usr/local/opt/openssl/bin:$PATH”`.
 {:important}
 
 ## Getting connected
@@ -69,20 +69,23 @@ After you create your Windows instance and complete the prerequisites, complete 
   ```
   {:codeblock}
   
-  This command displays your encrypted password, which is automatically generated when you create an instance by using a Windows image.
+  This command displays your encrypted password, which is automatically generated when you create an instance by using a Windows image. Copy the value and paste it into a file, for example, `examplepwd`.
 
-3. You now need to decrypt your password through a manual decryption process. To decrypt your password, run the following command:
+3. Decode the encrypted password and store it in a new file (for example, `examplepwd64`) by running the following command:
 
   ```
-  # Decode the encrypted password
   cat ~/examplepwd | base64 --decode > ~/examplepwd64
-  # Decrypt the decoded password using the RSA private key
-  openssl pkeyutl -in ~/examplepwd64 -decrypt -inkey private.pem -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256
-  -pkeyopt rsa_mgf1_md:sha256
   ```
   {:codeblock}
   
   where `~/examplepwd` is the file where you saved your encrypted password as referenced in step 2.  
+  
+4. Decrypt the decoded password with the RSA private key, for example `private.pem` by using the following openssl command. The private key might be named `id_rsa`or your `username`. For more information about SSH keys, see [Locating or generating your SSH key](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-ssh-keys#locating-or-generating-your-ssh-key). 
+
+  ```
+  openssl pkeyutl -in ~/examplepwd64 -decrypt -inkey private.pem -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256
+  -pkeyopt rsa_mgf1_md:sha256
+  ```
   
   LibreSSL, which is included with macOS, doesn't support SHA2 hashing algorithms that are needed to decrypt the password, resulting in `Public Key operation error` errors. You can obtain standard OpenSSL libraries by using a package management tool or by installing them manually. 
   {:note}
