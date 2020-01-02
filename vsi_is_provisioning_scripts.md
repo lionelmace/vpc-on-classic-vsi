@@ -53,7 +53,7 @@ echo <sshKey> > ~/.ssh/authorized_keys
 
 You can paste one of these examples directly into the **User Data** field. The user data is then available to the virtual server instance when it's created. 
 
-For more Linux user data examples and information, see [Cloud config examples ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloudinit.readthedocs.io/en/18.5/topics/examples.html){:new_window}.
+For more Linux user data examples and information, see [Cloud config examples ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloudinit.readthedocs.io/en/latest/topics/examples.html){:new_window}.
 
 ## User data example for Windows
 {: #user-data-example-for-windows}
