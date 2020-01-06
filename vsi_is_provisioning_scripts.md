@@ -29,27 +29,22 @@ When you create an {{site.data.keyword.vsi_is_full}} instance, you can add user 
 
 The following example shows how a Linux user can add a user and provide the user with an authorized SSH key. The **Name** field has the public key added to `~/.ssh/authorized_keys`. 
 
-```
-#cloud-config
-users:
-  - name: demouser
-    gecos: Demo User
-    sudo: ALL=(ALL) NOPASSWD:ALL
-    groups: users, admin
-    ssh_import_id: None
-    lock_passwd: true
-    ssh_authorized_keys:
-        - <ssh public key>
-```
-{:codeblock}
+
+    #cloud-config
+    users:
+      - name: demouser
+        gecos: Demo User
+        sudo: ALL=(ALL) NOPASSWD:ALL
+        groups: users, admin
+        ssh_import_id: None
+        lock_passwd: true
+        ssh_authorized_keys:
+            - <ssh public key>
 
 Here's another example of a shell script that shows how a Linux user can add an SSH key for the current user.
 
-```
-#!/bin/bash
-echo <sshKey> > ~/.ssh/authorized_keys
-```
-{:codeblock}
+    #!/bin/bash
+    echo <sshKey> > ~/.ssh/authorized_keys
 
 You can paste one of these examples directly into the **User Data** field. The user data is then available to the virtual server instance when it's created. 
 
@@ -60,10 +55,7 @@ For more Linux user data examples and information, see [Cloud config examples ![
 
 The following example shows how user data can be passed to a Windows instance. You can copy and paste this example directly into the **User Data** field.
 
-```
-#ps1_sysnative
-Set-Content -Path "C:\\test.txt" -Value "Hello IBM Cloud Instance"
-```
-{:codeblock}
+    #ps1_sysnative
+    Set-Content -Path "C:\\test.txt" -Value "Hello IBM Cloud Instance"
 
 For more Windows user data examples and information, see [Cloudbase-init 1.0 documentation ![External link icon](../icons/launch-glyph.svg "External link icon")](https://cloudbase-init.readthedocs.io/en/latest/userdata.html){:new_window}.
