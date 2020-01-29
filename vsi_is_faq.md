@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-06-24"
+  years: 2018, 2020
+lastupdated: "2020-01-29"
 
 subcollection: vpc-on-classic-vsi
 
@@ -44,6 +44,14 @@ No. It is currently not supported to move a virtual server from classic infrastr
 {: faq}
 
 Currently, only public virtual servers in the balanced, memory, and compute families are supported. For more information, see [Profiles](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-profiles#profiles).
+
+
+## When I attempt to update my Ubuntu image with apt, I receive an error about the grub menu.lst file. How do I fix it?
+{: #faq-ubuntu}
+{: faq}
+{: support}
+
+Edit the file "`/boot/grub/menu.lst`" by changing `# groot=LABEL...` into `# groot=(hd0)`. Then, run following command, `sudo update-grub-legacy-ec2`. For more information, see [Error: groot must be grub root device on ubuntu](https://developer.ibm.com/answers/questions/462237/error-groot-must-be-grub-root-device-on-ubuntu/){: external}.
 
 ## How do I get support for my {{site.data.keyword.vsi_is_short}}?
 {: #betasupport}
