@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-11-14"
+  years: 2018, 2020
+lastupdated: "2020-02-06"
 
 keywords: add ssh key, delete ssh key, ssh key, manage ssh key, virtual server instance, instance, virtual server
 
@@ -62,6 +62,9 @@ You can add and delete SSH keys by using the {{site.data.keyword.cloud_notm}} co
 {: #managing-ssh-keys-by-using-the-cli}
 
 You can also manage your SSH keys by using the CLI.
+
+Make sure that you have the {{site.data.keyword.cloud_notm}} CLI `vpc-infrastructure` plug-in installed. For more information, see [IBM Cloud CLI for VPC](/docs/vpc-on-classic?topic=vpc-on-classic-vpc-reference).
+{: tip}
 
 | Action           | Command                     | What happens next |
 | ---------------- | --------------------------- | ----------------- |
