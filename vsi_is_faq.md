@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-01-29"
+lastupdated: "2020-03-09"
 
 subcollection: vpc-on-classic-vsi
 
@@ -22,7 +22,7 @@ subcollection: vpc-on-classic-vsi
 {: #concurrent}
 {: faq}
 
-An account has a limit of 100 instances that can run on public virtual servers, dedicated virtual servers, and bare metal servers, at any time.
+An account has a limit of 20 instances that can run on public virtual servers, dedicated virtual servers, and bare metal servers, at any time.
 
 ## What regions are available?
 {: faq}
