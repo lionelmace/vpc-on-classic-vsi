@@ -94,6 +94,8 @@ To connect to your instance, use your private key and run the following command:
    You are now accessing your server!
 
 ## Next steps
+{: #vsi-next}
+
 After your instance is provisioned, explore your options.
 * [Managing your instance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-managing-virtual-server-instances#managing-virtual-server-instances)
 * [{{site.data.keyword.vsi_is_short}} permissions](/docs/vpc-on-classic?topic=vpc-on-classic-about-vpc-infrastructure-resources#planning-virtual-servers-for-vpc-permissions)
