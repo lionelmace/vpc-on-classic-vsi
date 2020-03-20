@@ -14,6 +14,7 @@ IBM Cloud Virtual Servers for VPC (Gen 1)
     /vpc-on-classic/vpc-on-classic-quotas
     vsi_is_images.md
     vsi_is_profiles.md
+    vsi-sb.md
     vsi_is_ssh_keys_about.md
     vsi_is_provisioning_scripts.md
     vsi_is_network_security_options.md
