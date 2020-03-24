@@ -49,7 +49,6 @@ Currently, only public virtual servers in the balanced, memory, and compute fami
 ## When I attempt to update my Ubuntu image with apt, I receive an error about the grub menu.lst file. How do I fix it?
 {: #faq-ubuntu}
 {: faq}
-{: support}
 
 Edit the file "`/boot/grub/menu.lst`" by changing `# groot=LABEL...` into `# groot=(hd0)`. Then, run following command, `sudo update-grub-legacy-ec2`. For more information, see [Error: groot must be grub root device on ubuntu](https://developer.ibm.com/answers/questions/462237/error-groot-must-be-grub-root-device-on-ubuntu/){: external}.
 
