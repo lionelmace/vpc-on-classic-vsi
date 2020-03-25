@@ -1,10 +1,10 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-12-03"
+  years: 2018, 2019, 2020
+lastupdated: "2020-03-20"
 
-keywords: Windows instance, encrypt password, decrypt password, retrieve password
+keywords: Windows instance, encrypt password, decrypt password, retrieve password, cli
 
 subcollection: vpc-on-classic-vsi
 
@@ -44,10 +44,6 @@ Make sure to complete the following prerequisites before you begin:
 2. Ask your account administrator to grant you access to retrieve the password from your virtual server instance. For more information, review [user permissions](/docs/vpc-on-classic?topic=vpc-on-classic-managing-user-permissions-for-vpc-resources).
 3. Create a new security group or add a rule to the default security group to enable inbound access for the Remote Desktop default port, 3389. For more information, see [Using security groups](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-using-security-groups).
 4. Ensure that inbound traffic over TCP/IP port 3389 is permitted on the VPC's default ACL. For more information, see [Setting up Network ACLs](/docs/vpc-on-classic-network?topic=vpc-on-classic-network-setting-up-network-acls).
-5. Verify that you have OpenSSL installed. To successfully decrypt your password, you must run OpenSSL and not LibreSSL. For more information, see [OpenSSL Downloads ![External link icon](../icons/launch-glyph.svg "External link icon")](https://www.openssl.org/source/){: new_window}.
-
-LibreSSL isn't compatible for the decryption of your password. You must run OpenSSL to decrypt your password. Make sure that you have OpenSSL in your path. For example, `export PATH=“/usr/local/opt/openssl/bin:$PATH”`.
-{:important}
 
 ## Getting connected
 {: #getting-connected-windows}
@@ -62,42 +58,23 @@ After you create your Windows instance and complete the prerequisites, complete 
   
   When the instance shows that it's `running`, you are ready to retrieve the initialization values to get your password. 
 
-2. Run the following command to initialize your instance:
+2. Run the following [CLI command](/docs/vpc-on-classic?topic=vpc-on-classic-vpc-reference#instance-initialization-values) to initialize your instance and obtain your instance password:
 
   ```
-  $ ibmcloud is instance-initialization-values <INSTANCE_ID>
+  $ ibmcloud is instance-initialization-values INSTANCE [--private-key (KEY | @KEY_FILE)] [--json]
   ```
   {:codeblock}
   
-  This command displays your encrypted password, which is automatically generated when you create an instance by using a Windows image. Copy the value and paste it into a file, for example, `examplepwd`.
+  This command decodes and decrypts your password, which is automatically generated when you create an instance using a Windows image based on the public SSH Key you uploaded and the associated private SSH key file.
 
-3. Decode the encrypted password and store it in a new file (for example, `examplepwd64`) by running the following command:
-
-  ```
-  cat ~/examplepwd | base64 --decode > ~/examplepwd64
-  ```
-  {:codeblock}
-  
-  where `~/examplepwd` is the file where you saved your encrypted password as referenced in step 2.  
-  
-4. Decrypt the decoded password with the RSA private key, for example `private.pem` by using the following openssl command. The private key might be named `id_rsa`or your `username`. For more information about SSH keys, see [Locating or generating your SSH key](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-ssh-keys#locating-or-generating-your-ssh-key). 
-
-  ```
-  openssl pkeyutl -in ~/examplepwd64 -decrypt -inkey private.pem -pkeyopt rsa_padding_mode:oaep -pkeyopt rsa_oaep_md:sha256
-  -pkeyopt rsa_mgf1_md:sha256
-  ```
-  
-  LibreSSL, which is included with macOS, doesn't support SHA2 hashing algorithms that are needed to decrypt the password, resulting in `Public Key operation error` errors. You can obtain standard OpenSSL libraries by using a package management tool or by installing them manually. 
-  {:note}
-
-4. After you decrypt your password, you can optionally associate a floating IP address to your Windows instance so you can connect to it from an internet location. Run the following command to associate a floating IP address to your instance:
+3. After you obtain your instance password, you can optionally associate a floating IP address to your Windows instance so you can connect to it from an internet location. Run the following command to associate a floating IP address to your instance:
 
   ```
   ibmcloud is floating-ip-reserve <FLOATING_IP_NAME> --nic-id <NIC_ID>
   ```
   {:codeblock}
 
-5. You now have what you need in order to connect to your Windows instance: decrypted password and floating IP address. Use your preferred Remote Desktop client to connect to your instance. To connect to your instance, provide the floating IP address and the decrypted password. The username is `Administrator` by default. (If you are connecting from a client that is running the Windows Administrator account, use `.\Administrator` as the user ID to log on to RDP.)
+4. You now have what you need in order to connect to your Windows instance: a decrypted password and a floating IP address. Use your preferred Remote Desktop client to connect to your instance. To connect to your instance, provide the floating IP address and the decrypted password. The username is `Administrator` by default. (If you are connecting from a client that is running the Windows Administrator account, use `.\Administrator` as the user ID to log on to RDP.)
 
 In [{{site.data.keyword.cloud_notm}} console](https://console.cloud.ibm.com/vpc){: external} on the **Instance Details** page of your virtual server instance, you can click **Download RDP file** to get a file with connection values pre-filled. You must add your decrypted password to connect. 
 {: tip}
