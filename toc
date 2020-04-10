@@ -64,7 +64,6 @@ IBM Cloud Virtual Servers for VPC (Gen 1)
         
     {: .topicgroup}
     Monitoring
-        vsi_is_monitoring.md
         /vsi/virtual-servers-sysdig-monitoring-metrics    
     
     {: .topicgroup}
