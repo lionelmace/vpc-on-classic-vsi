@@ -27,6 +27,9 @@ subcollection: vpc-on-classic-vsi
 You can create {{site.data.keyword.vsi_is_full}} from the *Virtual server instances* page in {{site.data.keyword.cloud_notm}} console. Use this information when you're creating generation 1 virtual server instances. 
 {:shortdesc}
 
+To create generation 2 virtual server instances, see [Creating instances by using the UI](/docs/vpc?topic=vpc-creating-virtual-servers).
+{:tip}
+
 Before you get started, make sure that you [created an IBM Cloud VPC](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started).
 {:important}
 

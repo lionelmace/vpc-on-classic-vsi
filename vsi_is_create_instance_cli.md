@@ -26,6 +26,9 @@ subcollection: vpc-on-classic-vsi
 You can create {{site.data.keyword.vsi_is_full}} instances by using the command line interface (CLI). Use this information when you're creating generation 1 virtual server instances.
 {:shortdesc}
 
+To create generation 2 virtual server instances, see [Creating instances by using the CLI](/docs/vpc?topic=vpc-creating-virtual-servers-cli).
+{:tip}
+
 ## Before you begin
 {: #prereq-creating-virtual-servers-cli}
 
