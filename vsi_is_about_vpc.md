@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-05-30"
+  years: 2018, 2020
+lastupdated: "2020-04-22"
 
 keywords: 
 
@@ -24,6 +24,9 @@ subcollection: vpc-on-classic-vsi
 
 {{site.data.keyword.vsi_is_full}} give you access to all of the benefits of {{site.data.keyword.vpc_short}}, including network isolation, security, and flexibility. 
 {:shortdesc}
+
+Newer generation available! For more information, see [About virtual server instances for VPC](/docs/vpc?topic=vpc-about-advanced-virtual-servers) for generation 2 compute resources.
+{:important}
 
 ## What is {{site.data.keyword.vpc_short}}?
 An {{site.data.keyword.vpc_short}} is a virtual network that is tied to your customer account. It offers you a cost-effective entry point that provides cloud security and the ability to scale dynamically with growth. It gives you fine-grained control over your virtual infrastructure and your network traffic segmentation.
