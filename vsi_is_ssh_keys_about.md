@@ -4,8 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-11-12"
 
-keywords: ssh key, virtual private cloud, virtual server, instance, public key, cryptography
-
+keywords: 
 subcollection: vpc-on-classic-vsi
 
 ---

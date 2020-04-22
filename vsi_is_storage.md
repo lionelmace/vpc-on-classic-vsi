@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-08-21"
 
-keywords: storage, virtual private cloud, virtual server, instance, block storage, volume, block storage volume, primary boot volume, secondary data volume, boot volume, data volume
+keywords: 
 
 subcollection: vpc-on-classic-vsi
 

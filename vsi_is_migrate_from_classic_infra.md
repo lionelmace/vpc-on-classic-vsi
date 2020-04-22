@@ -4,7 +4,7 @@ copyright:
   years: 2019
 lastupdated: "2019-09-10"
 
-keywords: migrate virtual server from classic infrastructure, migrate to vpc, migrate image template, image template, import image to vpc infrastructure, migrate virtual server, migrate instance
+keywords: 
 
 subcollection: vpc-on-classic-vsi
 

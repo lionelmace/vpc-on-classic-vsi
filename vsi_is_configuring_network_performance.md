@@ -4,7 +4,7 @@ copyright:
   years: 2019
 lastupdated: "2019-09-16"
 
-keywords: network performance, configuring jumbo frames, 
+keywords: 
 
 subcollection: vpc-on-classic-vsi
 

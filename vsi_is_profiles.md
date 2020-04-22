@@ -4,8 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-10-15"
 
-keywords: profile, virtual private cloud, virtual server, instance, balanced, compute, memory
-
+keywords: 
 subcollection: vpc-on-classic-vsi
 
 ---

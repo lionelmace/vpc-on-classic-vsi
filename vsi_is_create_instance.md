@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-03-18"
 
-keywords: virtual server instances, virtual private cloud, create virtual server, provision virtual server, virtual machine, instance, virtual server, deploy virtual server
+keywords: 
 
 subcollection: vpc-on-classic-vsi
 
@@ -27,13 +27,17 @@ subcollection: vpc-on-classic-vsi
 You can create {{site.data.keyword.vsi_is_full}} from the *Virtual server instances* page in {{site.data.keyword.cloud_notm}} console. Use this information when you're creating generation 1 virtual server instances. 
 {:shortdesc}
 
-To create generation 2 virtual server instances, see [Creating instances by using the UI](/docs/vpc?topic=vpc-creating-virtual-servers).
-{:tip}
-
-Before you get started, make sure that you [created an IBM Cloud VPC](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started).
+Newer version available. To create generation 2 virtual server instances, see [Creating instances by using the UI](/docs/vpc?topic=vpc-creating-virtual-servers).
 {:important}
 
-You must also have the correct permissions to create instances. For more information, see [Roles required to manage VPC resources](/docs/vpc-on-classic?topic=vpc-on-classic-resource-authorizations-required-for-api-and-cli-calls).
+## Before you begin
+{: #prereq-creating-virtual-servers-ui}
+
+1. Before you get started, make sure that you [created an IBM Cloud VPC](/docs/vpc-on-classic?topic=vpc-on-classic-getting-started).
+2. You must also have the correct permissions to create instances. For more information, see [Roles required to manage VPC resources](/docs/vpc-on-classic?topic=vpc-on-classic-resource-authorizations-required-for-api-and-cli-calls).
+
+## Creating an instance
+{: #create-instance}
 
 To create an instance, select the following instance details.
 1. In [{{site.data.keyword.cloud_notm}} console ![External link icon](../icons/launch-glyph.svg "External link icon")](https://console.cloud.ibm.com/vpc), navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > Virtual server instances**.

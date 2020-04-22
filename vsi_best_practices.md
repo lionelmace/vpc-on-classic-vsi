@@ -4,8 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-10-16"
 
-keywords: IBM Cloud Virtual Private Cloud, popular profile options, necessary resources, planning, virtual servers
-
+keywords: 
 subcollection: vpc-on-classic-vsi
 
 ---

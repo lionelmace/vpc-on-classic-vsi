@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-05-30"
 
-keywords: IBM Cloud VPC, virtual private cloud, virtual servers 
+keywords: 
 
 subcollection: vpc-on-classic-vsi
 

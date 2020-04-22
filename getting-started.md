@@ -4,8 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2019-10-16"
 
-keywords: "virtual servers, {{site.data.keyword.vsi_is_short}}, getting started, virtual private cloud, virtual machines, compute, instance, generation 1"
-
+keywords: 
 subcollection: vpc-on-classic-vsi
 
 ---

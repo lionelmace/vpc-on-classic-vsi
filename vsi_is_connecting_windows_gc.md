@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019, 2020
 lastupdated: "2020-03-20"
 
-keywords: Windows instance, encrypt password, decrypt password, retrieve password, cli
+keywords: 
 
 subcollection: vpc-on-classic-vsi
 

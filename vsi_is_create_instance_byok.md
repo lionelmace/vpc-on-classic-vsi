@@ -4,7 +4,7 @@ copyright:
   years: 2019
 lastupdated: "2019-07-23"
 
-keywords: create virtual server with encryption, data encryption key, dek, encrypted volume, virtual server instance, create virtual server, provision virtual server, virtual machine, instance, virtual server, deploy virtual server, block storage volume
+keywords: 
 
 subcollection: vpc-on-classic-vsi
 

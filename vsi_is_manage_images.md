@@ -4,7 +4,7 @@ copyright:
   years: 2019
 lastupdated: "2019-10-30"
 
-keywords: import custom image, custom image, deploy custom image, use custom image for virtual server, create custom image, custom Windows image, custom Linux image, provision instance with custom image
+keywords: 
 
 subcollection: vpc-on-classic-vsi
 

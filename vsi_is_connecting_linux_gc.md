@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2019
 lastupdated: "2018-11-14"
 
-keywords: private key, IP address, instance, Linux instance, ssh key, connect to your instance, connect to your linux instance, connect to your virtual server
+keywords: 
 subcollection: vpc-on-classic-vsi
 
 ---

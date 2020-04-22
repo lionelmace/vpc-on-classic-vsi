@@ -4,8 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-01-16"
 
-keywords: user data, virtual private cloud, virtual server, instance, configuration task, script
-
+keywords: 
 subcollection: vpc-on-classic-vsi
 
 ---

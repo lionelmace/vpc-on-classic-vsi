@@ -4,7 +4,7 @@ copyright:
   years: 2018, 2020
 lastupdated: "2020-02-06"
 
-keywords: add ssh key, delete ssh key, ssh key, manage ssh key, virtual server instance, instance, virtual server
+keywords: 
 
 subcollection: vpc-on-classic-vsi
 
