@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2018, 2019
-lastupdated: "2019-10-16"
+  years: 2018, 2020
+lastupdated: "2020-04-22"
 
 keywords: 
 subcollection: vpc-on-classic-vsi
@@ -26,10 +26,8 @@ subcollection: vpc-on-classic-vsi
 Use {{site.data.keyword.vsi_is_full}} (VPC) to create first-generation compute instances in the {{site.data.keyword.cloud_notm}}. Generation 1 instances were introduced with the release of IBM Cloud VPC and offer a broad selection of general-purpose profiles that are available in all VPC regions. Within the console, the generation is depicted using the following image.
 {:shortdesc}
 
-![Generation 1 compute banner](images/vsi.png "Image of the generation 1 compute banner"){: caption="Figure 1. This is the banner that appears when you are creating generation 1 compute resources in the console." caption-side="bottom"}
-
-New! Check out generation 2 virtual server profiles. For more information, see [Planning for instances](/docs/vpc?topic=vpc-vsi_best_practices).
-{:tip}
+Newer generation available! For more information, see [Getting started with Virtual Private Cloud](/docs/vpc?topic=vpc-getting-started) for generation 2 compute resources.
+{:important}
 
 You can create virtual server instances on demand, configure network and security, and manage storage. All of these features are available in an improved {{site.data.keyword.cloud_notm}} console. The console is built to provide you with quick and easy access to adjust your environment with your changing workload demands. 
 
