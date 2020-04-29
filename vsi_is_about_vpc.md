@@ -18,6 +18,7 @@ subcollection: vpc-on-classic-vsi
 {:tip: .tip}
 {:download: .download}
 {:note: .note}
+{:external: target="_blank" .external}
 
 # About Virtual Servers for VPC
 {: #virtual-private-cloud}
@@ -46,7 +47,7 @@ In today's IBM Cloud Virtual Server offering, instances use native subnet and VL
 {{site.data.keyword.vsi_is_short}} also have the following features that provide a simpler user experience and cost savings:
 * New {{site.data.keyword.cloud_notm}} console
 * New Virtual Private Cloud API and CLI
-* New billing model with sustained usage discount tiers, as described in [Pricing](/docs/vpc-on-classic?topic=vpc-on-classic-pricing-for-vpc#sustained-usage)
+* New billing model with sustained usage discount tiers, as described in [Pricing](https://www.ibm.com/cloud/vpc/pricing){: external}
 
 {{site.data.keyword.vsi_is_short}} are not compatible with the classic virtual server offerings. If you are interested in any of the  {{site.data.keyword.cloud_notm}} {{site.data.keyword.BluVirtServers_short}} offerings on the classic infrastructure, see [IBM Cloud Virtual Servers](/docs/vsi?topic=virtual-servers-getting-started-tutorial).
 {:note}
