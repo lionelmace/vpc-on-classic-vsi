@@ -25,6 +25,9 @@ subcollection: vpc-on-classic-vsi
 You can view and manage your {{site.data.keyword.vsi_is_full}} instances from the *Virtual server instances* page in {{site.data.keyword.cloud_notm}} console. Perform tasks such as start, stop, restart, and delete virtual server instances. 
 {:shortdesc}
 
+Newer generation available. For more information, see [Managing virtual server instances](/docs/vpc?topic=vpc-managing-virtual-server-instances) for generation 2 virtual servers.
+{:important}
+
 To manage your instances, complete the following steps.
 1. In [{{site.data.keyword.cloud_notm}} console](https://console.cloud.ibm.com/vpc){: external}, navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > Virtual server instances**.
 2. From here, you can manage tasks for a specific instance, or click an instance to view and edit its properties.
