@@ -24,6 +24,9 @@ subcollection: vpc-on-classic-vsi
 When you provision {{site.data.keyword.vsi_is_full}}, you can select from three families of profiles for generation 1 instances: Balanced, Compute, and Memory. A profile is a combination of vCPU and RAM that can be instantiated quickly to start a virtual server instance. In the {{site.data.keyword.Bluemix_notm}} console, you can choose from popular profile configurations or select from a list of profiles that best fit your needs.
 {: shortdesc}
 
+Newer generation available. For more information, see [Profiles](/docs/vpc?topic=vpc-profiles) for generation 2 virtual servers.
+{:important}
+
 The following families are available:
 
 | Families | Description |
