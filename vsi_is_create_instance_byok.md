@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-07-23"
+  years: 2019, 2020
+lastupdated: "2020-05-05"
 
 keywords: 
 
@@ -23,7 +23,7 @@ subcollection: vpc-on-classic-vsi
 # Creating virtual server instances with customer-managed encryption
 {: #creating-instances-byok}
 
-You can create {{site.data.keyword.vsi_is_full}} that use customer-managed encryption for block storage volumes when you have a key management service provisioned that includes your own data encryption key. By default instances are provisioned with a boot volume that includes provider-managed encryption. You can provision instances that use customer-managed encryption for the block storage volumes from {{site.data.keyword.cloud_notm}} console or by using the command line interface (CLI).
+You can create {{site.data.keyword.vsi_is_full}} that use customer-managed encryption for block storage volumes when you have a key management service provisioned that includes your own data encryption key. Customer-managed encryption protects your data while in transit and while at rest. By default instances are provisioned with a boot volume that includes provider-managed encryption. You can provision instances that use customer-managed encryption for the block storage volumes from {{site.data.keyword.cloud_notm}} console or by using the command line interface (CLI).
 {:shortdesc}
 
 ## Supported key management services for customer-managed encryption
@@ -59,7 +59,7 @@ Block Storage** (source service) and **{{site.data.keyword.keymanagementservices
 ## Provisioning virtual server instances with volumes that use customer-managed encryption
 {: #provision-byok-ui}
 
-When you provision a virtual server instance, you can specify customer-managed encryption for your boot volume and any data volumes that you want to add at provision time. If you want, you can use a combination of provider-managed encryption and customer-managed encryption for the volumes that are associated with your instance.
+When you provision a virtual server instance, you can specify customer-managed encryption for your boot volume and any data volumes that you want to add at provision time. Customer-managed encryption protects your data while in transit and while at rest. If you want, you can use a combination of provider-managed encryption and customer-managed encryption for the volumes that are associated with your instance.
 
 1. In [{{site.data.keyword.cloud_notm}} console](https://console.cloud.ibm.com/vpc){: external}, navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > Virtual server instances**. Click **New instance** and complete the required fields. (For more information about creating instances, see [Creating virtual server instances](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-creating-virtual-servers#creating-virtual-servers).) 
 2. In the **Boot volume** section, the default mode of encryption is _Provider managed_ encryption. To specify customer-managed encryption, click the pencil icon in the boot volume row. On the **Edit boot volume** page, update the fields in the **Encryption** section. See the following table for more information. When your changes are complete, click **Apply**.
