@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-04-22"
+lastupdated: "2020-05-13"
 
 keywords: 
 subcollection: vpc-on-classic-vsi
@@ -52,7 +52,7 @@ Access the {{site.data.keyword.vsi_is_short}} Order Form from the [{{site.data.k
 ## Step 2. Generate an SSH key
 {: #vsi-for-vpc-generate-ssh-key-gs}
 
-1. Run the `ssh-keygen` command and follow the prompts. The command generates two files. The generated public key is in the `<your key>.pub` file.
+1. Run the `ssh-keygen` command and follow the prompts. The command generates two files. The generated public key is in the `<your key>.pub` file. For more information, see [SSH keys](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-ssh-keys).
 2. After you generate an SSH key, you must add the key in {{site.data.keyword.cloud_notm}} console. In [{{site.data.keyword.cloud_notm}} console](https://cloud.ibm.com/vpc){: external}, navigate to **Menu icon ![Menu icon](../icons/icon_hamburger.svg) > VPC Infrastructure > Compute > SSH keys**. Then, click **Add SSH key** and complete the required information.
 
 ## Step 3. Create a {{site.data.keyword.vsi_is_short}} instance
