@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2019, 2020
-lastupdated: "2020-03-20"
+lastupdated: "2020-07-08"
 
 keywords: 
 
@@ -61,7 +61,7 @@ After you create your Windows instance and complete the prerequisites, complete 
 2. Run the following [CLI command](/docs/vpc-on-classic?topic=vpc-on-classic-vpc-reference#instance-initialization-values) to initialize your instance and obtain your instance password:
 
   ```
-  $ ibmcloud is instance-initialization-values INSTANCE [--private-key (KEY | @KEY_FILE)] [--json]
+  $ ibmcloud is instance-initialization-values INSTANCE [--private-key (KEY | @KEY_FILE)]
   ```
   {:codeblock}
   
