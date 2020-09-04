@@ -2,7 +2,7 @@
 
 copyright:
   years: 2018, 2020
-lastupdated: "2020-05-13"
+lastupdated: "2020-09-01"
 
 keywords: 
 subcollection: vpc-on-classic-vsi
@@ -15,6 +15,7 @@ subcollection: vpc-on-classic-vsi
 {:new_window: target="_blank"}
 {:pre: .pre}
 {:table: .aria-labeledby="caption"}
+{:deprecated: .deprecated}
 {:important: .important}
 {:note: .note}
 {:tip: .tip}
@@ -22,6 +23,9 @@ subcollection: vpc-on-classic-vsi
 
 # Getting started with Virtual Servers for VPC
 {: #getting-started}
+
+As IBM continues to invest and innovate on the IBM Cloud Virtual Private Cloud (gen 2 compute) infrastructure, we're focusing on delivering maximum value in a single VPC Infrastructure platform. To support this effort, generation 1 compute infrastructure is being deprecated. The end of service date is 26 February 2021. For more information, see the [Start your migration](https://www.ibm.com/cloud/blog/announcements/start-your-vpc-gen1-to-vpc-gen2-migration){:external} blog.
+{:deprecated}
 
 Use {{site.data.keyword.vsi_is_full}} (VPC) to create first-generation compute instances in the {{site.data.keyword.cloud_notm}}. Generation 1 instances were introduced with the release of IBM Cloud VPC and offer a broad selection of general-purpose profiles that are available in all VPC regions. Within the console, the generation is depicted using the following image.
 {:shortdesc}
