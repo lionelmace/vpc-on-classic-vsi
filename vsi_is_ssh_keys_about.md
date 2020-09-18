@@ -29,7 +29,7 @@ When you provision {{site.data.keyword.vsi_is_full}}, you must select an existin
 
 SSH keys allow access to an instance without using a password from corresponding clients for each public key that is implemented on the instance. By adding an SSH key to an instance during provisioning, the instance can be accessed with the corresponding key instead of a password. You can add SSH keys to an instance only when you initially create the instance. After a Linux instance is created, you can edit keys directly in the `~/.ssh/` directory of the instance.
 
-Logging in to your instance with a password isn't supported. If you have a Windows instance, the SSH key is used to decrypt your password. For more information, see [Connecting to your Windows instance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-connecting-to-your-windows-instance). 
+Creating a virtual server instance with a password option for connecting is not supported. You must specify an SSH key when provisioning the instance and use the private key to connect to the instance after it is created. If you have a Windows instance, the SSH key is used to decrypt your password. For more information, see [Connecting to your Windows instance](/docs/vpc-on-classic-vsi?topic=vpc-on-classic-vsi-connecting-to-your-windows-instance). 
 {:note}
 
 ## Locating or generating your SSH key
