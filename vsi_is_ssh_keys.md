@@ -56,7 +56,7 @@ You can add and delete SSH keys by using the {{site.data.keyword.cloud_notm}} co
     {: tip}
   
 5. You can open the public SSH key file with a text editor. Then, copy and paste the entire contents of the SSH file into the **Public key** space on the form.
-6. Click **Add SSH key** to create the your SSH key in the IBM Cloud console. It now displas in **VPC Infrastructure > Compute > SSH keys**.
+6. Click **Add SSH key** to create the your SSH key in the IBM Cloud console. It now displays in **VPC Infrastructure > Compute > SSH keys**.
 
 ## Managing SSH keys by using the CLI
 {: #managing-ssh-keys-by-using-the-cli}
